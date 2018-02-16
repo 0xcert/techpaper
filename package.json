@@ -1,0 +1,15 @@
+{
+  "name": "0xcert-whitepaper",
+  "version": "0.1.0",
+  "description": "0xcert protocol implementation for Ethereum blockchain.",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "generate": "markdown-pdf ./src/whitepaper.md -o ./dist/whitepaper.pdf"
+  },
+  "author": "https://0xcert.org",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-pdf": "8.1.1"
+  }
+}
