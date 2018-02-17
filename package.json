@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "generate": "markdown-pdf ./src/whitepaper.md -o ./dist/0xcert-protocol.pdf -s ./src/page.css -z ./src/highlight.css -h ./src/runnings.js -f A4 -r portrait"
+    "generate": "markdown-pdf -c ./src ./src/whitepaper.md -o ./dist/0xcert-protocol.pdf -s ./src/page.css -z ./src/highlight.css -h ./src/runnings.js -f A4 -r portrait"
   },
   "author": "https://0xcert.org",
   "license": "MIT",
