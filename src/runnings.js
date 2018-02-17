@@ -15,7 +15,7 @@ exports.footer = {
           '}',
         '</style>',
         '<span>',
-          page + ' / ' + total,
+          (page - 1) + ' / ' + (total - 1),
         '</span>',
       '</footer>'
     ].join('');
