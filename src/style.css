@@ -1,0 +1,17 @@
+/* scaffold ************************/
+
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+
+body {
+  text-align: justify;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 12px;
+}
+
+/* objects *************************/
+
+pagebreak {
+  display: block;
+  page-break-before: always;
+  break-before: always;
+}
