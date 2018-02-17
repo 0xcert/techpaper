@@ -2,6 +2,8 @@
 
 > Official technical document for 0xcert protocol.
 
+This is the official 0xcert protocol white paper repository, which provides technical details of the 0xcert protocol. The latest version of the 0xcert protocol whitepaper is available here: [0xcert-protocol.pdf](dist/0xcert-protocol.pdf)
+
 ## Development
 
 * Run `npm install` to install dependencies.
