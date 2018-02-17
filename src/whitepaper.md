@@ -50,7 +50,7 @@ The protocol supports a wide range of use cases, where digital assets and owners
 
 Certification represents assurance by an independent accredited body of conformity to specific requirements. It covers products and their components, services, people and systems.
 
-Digitization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable for various exploits, hacks and falsifications. 
+Digitalization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable for various exploits, hacks and falsifications. 
 
 <img src="images/2.svg" height="220" />
 
@@ -72,7 +72,7 @@ The protocol also supports numerous business models, used by third-party dApps. 
 
 ## Smart Certificate
 
-A cryptographic token is a unit of value that an organization creates to self-govern its business model and empowers its users to interact with its products, while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders. It can represent a multitude of digital assets that functionally range from payment units, governance instruments, ownership rights, to benefits sharing and voting power. And with frictionless trust, enabled by the blockchain technology, a token can also act as a verifiable proof of achievements and accomplishments, or in other words, a certificate.
+A cryptographic token is a unit of value that an organization creates to self-govern its business model and empowers its users to interact with its products, while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders. It can represent a multitude of digital assets that functionally range from payment units, governance instruments, ownership rights, to benefits sharing and voting power. And with frictionless trust, enabled by the blockchain technology, a token can also act as a verifiable proof of achievements and accomplishments or in other words, a certificate.
 
 A certificate in the 0xcert protocol is called “xcert“. It represents an imprint of a digital asset which serves as a decentralized proof of a digital asset on the blockchain. 
 
@@ -102,7 +102,7 @@ A digital asset in the 0xcert protocol is defined and described in form of a spe
 
 The protocol provides conventions for these objects, thus every digital asset in the 0xcert protocol has its own xcert recipe. The xcert recipe represents a technical specification of a particular digital asset, which explains the JSON object structure and a detailed description of each data key. These documents are defined and approved by the interested community around the protocol. The community can propose updates and new conventions, which can then be included into the protocol, based on the majority consensus.
 
-The 0xcert protocol can cover all sorts of digital assets. A simple imaginary xcert recipe, that describes a person could look something like this:
+The 0xcert protocol can cover all sorts of digital assets. A simple imaginary xcert recipe, that describes a person, could look something like this:
 
 ```json
 {
@@ -118,7 +118,7 @@ The 0xcert protocol can cover all sorts of digital assets. A simple imaginary xc
 
 Xcerts are assigned to digital wallets. The ownership of each xcert is transferable between digital wallets. 
 
-New xcerts can be minted by the issuer, which owns the xcert smart contract, or by an entity authorized by the issuer. Similar logic applies to the burning process, where also the holder is allowed to burn any xcert that he owns. 
+New xcerts can be minted by the issuer, which owns the xcert smart contract or by an entity authorized by the issuer. Similar logic applies to the burning process, where also the holder is allowed to burn any xcert that he owns. 
 
 <img src="images/3.svg" height="400" />
 
@@ -146,17 +146,17 @@ All parties involved in the certification process are expected to keep a copy of
 
 ## Verification
 
-0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownerships. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside certs on the blockchain.
+0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownerships. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside xcerts on the blockchain.
 
 In order to obtain valid information about a particular digital asset, a holder must disclose information to skeptical party, and send a certification recipe for the requested asset, through an arbitrary communication medium. A holder must also provide the appropriate xcert smart contract address on the blockchain, where the digital asset imprint exists and can thus be verified.
 
-Based on the data, received from a holder, the party creates a cryptographic hash from the provided certification recipe object and then verifies, that it matches with the one stored in the provided xcert on the blockchain. When the hash strings are equal the information can be treated as valid and the holder can be trusted.
+Based on the data, received from a holder, the party creates a cryptographic hash from the provided certification recipe object and then verifies that it matches with the one stored in the provided xcert on the blockchain. When the hash strings are equal the information can be treated as valid and the holder can be trusted.
 
 <img src="images/5.svg" height="300" />
 
 *Figure 7: Xcerts carry a trustless proof of digital asset existence and ownership.*
 
-In terms of dApps, the verification process is usually automated. Some dApps might expect a holder to have the xcert stored in his digital wallet. Holders are able to have all xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables third party to quickly and easily verify any provided information, without unnecessary interaction.
+In terms of dApps, the verification process is usually automated. Some dApps might expect a holder to have the xcert stored in his digital wallet. Holders are able to have all xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables third party to quickly and easily verify any provided information without unnecessary interaction.
 
 <div class="pagebreak" />
 
@@ -180,7 +180,7 @@ XCT represents a protocol token and is introduced to align certification parties
 
 ## Continuous Integration
 
-A smart contract can not be changed after it is deployed to the blockchain. Changes can be applied only by deploying a new contract at new address.
+A smart contract can not be changed after it is deployed to the blockchain. Changes can be applied only by deploying a new contract at a new address.
 
 Protocol may include a decentralized governance (DAO) mechanism to allow the community to vote for improvements and possibly fork the protocol into multiple versions. The contracts may use protocol tokens to securely drive a decentralized continuous integration of updates with no disruption, while also protecting all the parties and stakeholders.
 
