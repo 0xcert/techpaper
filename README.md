@@ -10,6 +10,12 @@ This is the official 0xcert protocol white paper repository, which provides tech
 
 * Run `npm run generate` to generate the PDF file.
 
+## Credits
+
+* Kristijan Sedlak, *author*
+* Jure Zih, *author*
+* Romina kavčič, *illustrations*
+
 ## License (MIT)
 
 ```
