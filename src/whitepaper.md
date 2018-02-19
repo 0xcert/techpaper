@@ -132,7 +132,7 @@ An issuer represents a trusted authority that provides a value for the intereste
 
 *Figure 6: An issuer enables the certification by deploying a smart contract to the blockchain.*
 
-The issuer creates a new a smart certificate and deploys it to the public blockchain. This makes the issuer also the owner of this smart contract, with ability to mint new xcerts and transfer ownerships to holders.
+The issuer creates a new smart certificate and deploys it to the public blockchain. This makes the issuer also the owner of this smart contract, with ability to mint new xcerts and transfer ownerships to holders.
 
 The minting process of a new xcert starts by creating a certificate recipe. As explained earlier in the document, this object holds information about a particular digital asset and can include product related data, issuer details, holder identity information and more. The protocol provides this kind of convention for each digital asset, and specifies a list of required and optional keys, related type information and usage details. 
 
