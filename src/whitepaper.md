@@ -10,7 +10,7 @@ Introduction ................................................. 02
 
 [0] Overview ................................................. 02
 
-[1] Proof On Chain ........................................... 03
+[1] Decentralization ......................................... 03
 
 Specification ................................................ 05
 
@@ -46,19 +46,19 @@ References ................................................... 15
 
 The protocol supports a wide range of use cases, where digital assets and ownerships play a role. Because the data are stored in the decentralized blocks, the information can fully be trusted and verified by anyone and anywhere. In addition, the protocol uses a publicly accessible network of digital wallets and smart contracts, making it extensible through third party modules and a variety of dApps on a shared infrastructure.
 
-## Proof On Chain
+## Decentralization
 
 Certification represents assurance by an independent accredited body of conformity to specific requirements. It covers products and their components, services, people and systems.
 
 Digitalization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable for various exploits, hacks and falsifications. 
 
-<img src="images/2.svg" height="220" />
+<img src="images/2.svg" height="200" />
 
 *Figure 2: 0xcert protocol uses blockchain to store digital assets’ imprints.*
 
 The protocol is built with the use of blockchain, a distributed ledger technology that was first built to support the Bitcoin cryptocurrency. Blockchain can be best described as a distributed ledger that maintains a list of records called blocks. Each block has a timestamp and is built on top of an already existing block, preventing any data to be altered retroactively.
 
-Blockchain offers a unique solution to the problem of secure online transactions. Due to its transparency and distribution of information to many blockchain nodes, it is nearly impossible to manipulate existing data records, making it potentially suitable for recording events, records, identities, certificates, transactions and other documentation.
+Blockchain offers a unique solution to the problem of secure online transactions. Due to its transparency and distribution of information to many decentralized blockchain nodes, it is nearly impossible to manipulate existing data records, making it potentially suitable for recording events, records, identities, certificates, transactions and other documentation.
 
 Certification can benefit greatly from this new paradigm. By storing hashed data on the blockchain, individuals, companies and institutions can keep a decentralized record of their certificates proofs, while maintaining sensitive data completely private. At the same time, each certificate record, their issuers and owners, can be easily authenticated and referenced.
 
