@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Overpass Mono', monospace;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 21px;
   text-align: justify;
 }
@@ -21,9 +21,6 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 28px;
-}
-h2 {
   font-size: 22px;
 }
 
@@ -36,7 +33,7 @@ h2 {
 }
 
 .logo {
-  margin-bottom: 150px;
+  margin-bottom: 170px;
   display: block;
 }
 

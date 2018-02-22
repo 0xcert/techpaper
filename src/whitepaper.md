@@ -1,52 +1,54 @@
 <img src="images/logo.svg" height="70" class="logo" />
-<div class="title">Open Protocol For Decentralized Certification Of Digital Assets On The Blockchain</div>
-<div class="info">Version 0.5</div>
+<div class="title">Open protocol for decentralized certificates as non-fungible assets</div>
+<div class="info">Version 0.6</div>
 <div class="info">Authors: Kristijan Sedlak, Jure Zih</div>
 <div class="info">0xcert.org</div>
 
 <div class="pagebreak" />
 
-Introduction ................................................. 02
+01 Introduction .................................................... 02
 
-[0] Overview ................................................. 02
+02 Decentralization ................................................ 04
 
-[1] Decentralization ......................................... 03
+03 Smart certificate ............................................... 06
 
-Specification ................................................ 05
+04 Conventions ..................................................... 08
 
-[0] Smart Certificate ........................................ 03
+05 Certification ................................................... 09
 
-[1] Conventions .............................................. 07
+06 Verification .................................................... 12
 
-[2] Certification ............................................ 07
+07 Third-party services ............................................ 14
 
-[3] Verification ............................................. 10
+08 Protocol token (XCT) ............................................ 15
 
-Third-party Services ......................................... 12
+09 Continuous integration .......................................... 16
 
-[0] Protocol Token (XCT) ..................................... 13
+10 0xcert explorer ................................................. 17
 
-[1] Continuous Integration ................................... 13
-
-0xcert Explorer .............................................. 14
-
-References ................................................... 15
+11 References ...................................................... 18
 
 <div class="pagebreak" />
 
-# Introduction
+# 01 Introduction
 
-## Overview
+0xcert is an open protocol for decentralized certificates as non-fungible digital assets. The protocol allows for validating a proof of existence, authenticity and ownership of any digital asset, based on digital wallets and smart certificates called xcerts.
 
-0xcert is an open protocol for decentralized certification of digital assets on the blockchain. The protocol allows for validating a proof of existence, authenticity and ownership of any digital asset, based on digital wallets and smart certificates called xcerts. It provides a framework with a set of on-chain and off-chain rules for managing xcerts as well as an advanced integration layer for different dApps and relay applications.
+It provides a framework with a set of on-chain and off-chain rules for managing xcerts as well as an advanced integration layer for different dapps and relay applications.
 
-<img src="images/1.svg" height="320" />
+<img src="images/1.svg" height="420" />
 
-*Figure 1: Users can interact with the protocol manually or through higher-level dApps.*
+*Figure 1: Users can interact with the protocol manually or through higher-level dapps.*
 
-The protocol supports a wide range of use cases, where digital assets and ownerships play a role. Because the data are stored in the decentralized blocks, the information can fully be trusted and verified by anyone and anywhere. In addition, the protocol uses a publicly accessible network of digital wallets and smart contracts, making it extensible through third party modules and a variety of dApps on a shared infrastructure.
+The protocol supports a wide range of use cases, where digital assets and ownerships play a role. Because the data are stored in the decentralized blocks, the information can fully be trusted and verified by anyone and anywhere. In addition, the protocol uses a publicly accessible network of digital wallets and smart contracts, making it extensible through third party modules and a variety of dapps on a shared infrastructure.
 
-## Decentralization
+The protocol provides a unified blockchain based certification layer for digital assets, which eliminates the middleman and acts as a mediator between parties involved in the certification process. Anyone can use the fully functional 0xcert protocol completely free of charge, with the ability to manually mint, burn, verify and transfer xcerts.
+
+The protocol also supports numerous business models, used by third-party dapps. These applications sit on top of the protocol and can use XCT tokens as a fuel for their services. The dapps form a network of public and private digital assets certification services and offer higher-level features, that simplify and automate the certification process, provide public and private listing, rewarding mechanisms, integration gateways and more.
+
+<div class="pagebreak" />
+
+# 02 Decentralization
 
 Certification represents assurance by an independent accredited body of conformity to specific requirements. It covers products and their components, services, people and systems.
 
@@ -64,13 +66,7 @@ Certification can benefit greatly from this new paradigm. By storing hashed data
 
 <div class="pagebreak" />
 
-# Specification
-
-The protocol provides a unified blockchain based certification layer for digital assets, which eliminates the middleman and acts as a mediator between parties involved in the certification process. Anyone can use the fully functional 0xcert protocol completely free of charge, with the ability to manually mint, burn, verify and transfer xcerts.
-
-The protocol also supports numerous business models, used by third-party dApps. These applications sit on top of the protocol and can use XCT tokens as a fuel for their services. The dApps form a network of public and private digital assets certification services and offer higher-level features, that simplify and automate the certification process, provide public and private listing, rewarding mechanisms, integration gateways and more.
-
-## Smart Certificate
+# 03 Smart certificate
 
 A cryptographic token is a unit of value that an organization creates to self-govern its business model and empowers its users to interact with its products, while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders. It can represent a multitude of digital assets that functionally range from payment units, governance instruments, ownership rights, to benefits sharing and voting power. And with frictionless trust, enabled by the blockchain technology, a token can also act as a verifiable proof of achievements and accomplishments or in other words, a certificate.
 
@@ -96,7 +92,9 @@ An xcert design follows also the W3C specification that covers decentralized ide
 
 The xcert document is a single JSON object conforming to RFC-7159 and follows the mapping format defined by the JSON-LD specification. A minimum object should include subject information, asset proof data and a localized name of an asset. 
 
-## Conventions
+<div class="pagebreak" />
+
+# 04 Conventions
 
 A digital asset in the 0xcert protocol is defined and described in form of a specially designed JSON object, which conforms to RFC-7159 and follows the mapping format defined by the JSON-LD specification.
 
@@ -114,7 +112,9 @@ The 0xcert protocol can cover all sorts of digital assets. A simple imaginary xc
 
 *Figure 4: Xcert recipes describing digital assets.*
 
-## Certification
+<div class="pagebreak" />
+
+# 05 Certification
 
 Xcerts are assigned to digital wallets. The ownership of each xcert is transferable between digital wallets. 
 
@@ -142,9 +142,11 @@ For the final step in the certification process, the issuer submits the cryptogr
 
 The minting process creates a new xcert and assigns the ownership to the provided holder. When the certification is completed, the issuer sends the recipe object over arbitrary communication medium to the holder, so he will be able to provide the proof of ownership for the particular digital asset. 
 
-All parties involved in the certification process are expected to keep a copy of the xcert recipe object, in the same way as they keep a copy of their digital wallet credentials. They can store these information locally or can authorize third-party dApps to do that on their behalf. In terms of trust, issuer is responsible to prove and promote their account authenticity information over arbitrary communication medium when needed.
+All parties involved in the certification process are expected to keep a copy of the xcert recipe object, in the same way as they keep a copy of their digital wallet credentials. They can store these information locally or can authorize third-party dapps to do that on their behalf. In terms of trust, issuer is responsible to prove and promote their account authenticity information over arbitrary communication medium when needed.
 
-## Verification
+<div class="pagebreak" />
+
+# 06 Verification
 
 0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownerships. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside xcerts on the blockchain.
 
@@ -152,33 +154,37 @@ In order to obtain valid information about a particular digital asset, a holder 
 
 Based on the data, received from a holder, the party creates a cryptographic hash from the provided certification recipe object and then verifies that it matches with the one stored in the provided xcert on the blockchain. When the hash strings are equal the information can be treated as valid and the holder can be trusted.
 
-<img src="images/5.svg" height="300" />
+<img src="images/5.svg" height="250" />
 
 *Figure 7: Xcerts carry a trustless proof of digital asset existence and ownership.*
 
-In terms of dApps, the verification process is usually automated. Some dApps might expect a holder to have the xcert stored in his digital wallet. Holders are able to have all xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables third party to quickly and easily verify any provided information without unnecessary interaction.
+In terms of dapps, the verification process is usually automated. Some dapps might expect a holder to have the xcert stored in his digital wallet. Holders are able to have all xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables third party to quickly and easily verify any provided information without unnecessary interaction.
 
 <div class="pagebreak" />
 
-# Third-party Services
+# 07 Third-party services
 
 The 0xcert protocol represents a low-level certification layer and defines the steps for different certification flows, strengthened by the conventions. The protocol allows for building a higher-level applications and services, to enable advanced certification features, usage simplifications and automatization.
 
-In addition to the raw protocol, 0xcert provides a set of smart contracts installed on the blockchain, with supporting SDKs, which cover different business models. This allows for easy integration of the 0xcert protocol into existing systems. Relay applications and other dApps don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid and flexible certification infrastructure, that ensures interoperability between dApps by default.
+In addition to the raw protocol, 0xcert provides a set of smart contracts installed on the blockchain, with supporting SDKs, which cover different business models. This allows for easy integration of the 0xcert protocol into existing systems. Relay applications and other dapps don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid and flexible certification infrastructure, that ensures interoperability between dapps by default.
 
-<img src="images/6.svg" height="250" />
+<img src="images/6.svg" height="230" />
 
 *Figure 8: Applications on top of the 0xcert protocol form a network of certification services.*
 
 This setup supports common business logic and serves as a decentralized proxy for handling communication between services and certification parties. Applications can use protocol’s XCT token, for payments or as a fuel for their services.
 
-## Protocol Token (XCT)
+<div class="pagebreak" />
+
+# 08 Protocol token (XCT)
 
 XCT tokens are the native utility tokens of the 0xcert protocol. They are compliant with the ERC-20 standard contract ABI for tokens on the Ethereum blockchain.
 
-XCT represents a protocol token and is introduced to align certification parties with dApps and assures that the proposed protocol can be adhered to. With the infrastructure built around a system of smart contracts and dApps, it’s primary role is to provide the incentive mechanisms and support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dApps that operate on the protocol, and similar to gas on the Ethereum blockchain, covers fees for issuing xcerts.
+XCT represents a protocol token and is introduced to align certification parties with dapps and assures that the proposed protocol can be adhered to. With the infrastructure built around a system of smart contracts and dapps, it’s primary role is to provide the incentive mechanisms and support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol, and similar to gas on the Ethereum blockchain, covers fees for issuing xcerts.
 
-## Continuous Integration
+<div class="pagebreak" />
+
+# 09 Continuous integration
 
 A smart contract can not be changed after it is deployed to the blockchain. Changes can be applied only by deploying a new contract at a new address.
 
@@ -186,19 +192,19 @@ Protocol may include a decentralized governance (DAO) mechanism to allow the com
 
 <div class="pagebreak" />
 
-# 0xcert Explorer
+# 10 0xcert explorer
 
 The purpose of the 0xcert foundation, as an institution behind the 0xcert protocol, is to provide the foundation for the trustless certificates on the blockchain and to unify the certification space as much as possible. The foundation tends to bring the value to the open-source community around the 0xcert protocol, to connect individuals and groups working in the area of certification and to provide resources and support for the related community driven incentives.
 
-In addition to the protocol itself, the 0xcert Foundation provides and manages an online 0xcert Explorer dApp, which enables a live view of the 0xcert network, together with interfaces for interacting with the protocol and represents the central certification hub.
+In addition to the protocol itself, the 0xcert Foundation provides and manages an online 0xcert Explorer dapp, which enables a live view of the 0xcert network, together with interfaces for interacting with the protocol and represents the central certification hub.
 
 <img src="images/7.svg" height="250" />
 
-*Figure 9: 0xcert Explorer is an open-source dApp, which includes a block explorer, search, API interfaces and analytics for decentralized xcerts on the blockchain.*
+*Figure 9: 0xcert Explorer is an open-source dapp, which includes a block explorer, search, API interfaces and analytics for decentralized xcerts on the blockchain.*
 
 <div class="pagebreak" />
 
-# References
+# 11 References
 
 [0] Deed Standard, https://goo.gl/kh5qaS
 
