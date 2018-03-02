@@ -1,11 +1,9 @@
 /* scaffold ************************/
 
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
-
 body {
-  font-family: 'Overpass Mono', monospace;
-  font-size: 11px;
-  line-height: 21px;
+  font-family: 'Times New Roman';
+  font-size: 12px;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -15,7 +13,8 @@ img {
 }
 
 h1, h2 {
-  font-weight: 700;
+  font-family: 'Times New Roman';
+  font-weight: bold;
   margin-top: 40px;
   display: block
 }
@@ -32,18 +31,25 @@ h1 {
   break-before: always;
 }
 
-.logo {
-  margin-bottom: 170px;
-  display: block;
+.contents {
+  width: 100%;
+}
+.contents td+td {
+  text-align: right;
+}
+.contents__section td {
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 .title {
-  font-size: 28px;
-  text-align: center;
-  line-height: 39px;
-  margin-bottom: 220px;
+  margin-top: 260px;
+  font-size: 45px;
+  display: block;
+  margin-bottom: 0px;
+  line-height: 1;
 }
 
-.info {
-  text-align: center;
+.description {
+  margin-bottom: 250px;
 }

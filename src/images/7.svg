@@ -2,34 +2,34 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1000px" height="507px" viewBox="0 88.5 1000 507" enable-background="new 0 88.5 1000 507" xml:space="preserve">
+	 width="1000px" height="518px" viewBox="0 82 1000 518" enable-background="new 0 82 1000 518" xml:space="preserve">
 <title>003</title>
 <desc>Created with Sketch.</desc>
 <g id="Page-1">
 	<g id="_x30_03">
 		
-			<rect id="Rectangle" x="31" y="270" fill="#E8F7FC" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="291" height="209"/>
+			<rect id="Rectangle" x="31" y="270" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="291" height="209"/>
 		
 			<rect id="Rectangle_1_" x="679" y="270" fill="none" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="291" height="166"/>
 		<polygon id="Rectangle_2_" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" points="355,270 
 			646,270 646,577 355,577 		"/>
 		<text transform="matrix(1 0 0 1 461.076 239)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Explorer</text>
 		<text transform="matrix(1 0 0 1 60 311)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Blockchain</text>
-		<text transform="matrix(1 0 0 1 390 311)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">xCert Listing</text>
+		<text transform="matrix(1 0 0 1 390 311)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">0xcert Listing</text>
 		<text transform="matrix(1 0 0 1 390 359)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Transactions</text>
 		<text transform="matrix(1 0 0 1 390 403)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Blockchain</text>
-		<text transform="matrix(1 0 0 1 709 315)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Open-source Repositories</text>
-		<text transform="matrix(1 0 0 1 709 359)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Managed Issue Tracking</text>
-		<text transform="matrix(1 0 0 1 709 399)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">XIP</text>
+		<text transform="matrix(1 0 0 1 709 315)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Open-source repositories</text>
+		<text transform="matrix(1 0 0 1 709 359)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Managed issue tracking</text>
+		<text transform="matrix(1 0 0 1 709 399)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Wiki</text>
 		<text transform="matrix(1 0 0 1 390 493)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Wallet Overview</text>
-		<text transform="matrix(1 0 0 1 390 449)" fill="#FF0000" font-family="'Arial-BoldMT'" font-size="14">Minting</text>
-		<text transform="matrix(1 0 0 1 450.368 449)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Interface</text>
+		<text transform="matrix(1 0 0 1 390 449)" font-family="'Arial-BoldMT'" font-size="14">Minting</text>
+		<text transform="matrix(1 0 0 1 446.368 449)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Interface</text>
 		<text transform="matrix(1 0 0 1 390 541)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Verification Interface</text>
 		<text transform="matrix(1 0 0 1 60 355)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Specs</text>
 		<text transform="matrix(1 0 0 1 60 399)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">Conventions</text>
 		<text transform="matrix(1 0 0 1 60 442)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="14">SDK</text>
 		<text transform="matrix(1 0 0 1 137.076 239)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Protocol</text>
-		<text transform="matrix(1 0 0 1 716.084 239)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Open-source Activities</text>
+		<text transform="matrix(1 0 0 1 716.084 239)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Open-source activities</text>
 		<polyline id="Line" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" points="824,212 824,135 
 			176.02,135.062 176,212 		"/>
 		<path id="Line-5" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M501,103l-1,111"/>

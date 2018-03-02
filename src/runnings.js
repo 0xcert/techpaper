@@ -1,4 +1,6 @@
-exports.header = null;
+exports.header = {
+  height: '1cm',
+};
 
 exports.footer = {
   height: '1cm',
@@ -6,16 +8,16 @@ exports.footer = {
     return [
       '<footer>',
         '<style>',
-          '@import url("https://fonts.googleapis.com/css?family=Overpass+Mono");',
           'body {',
             'text-align: justify;',
-            'font-family: "Overpass Mono", monospace;',
+            'font-family: "Times New Roman";',
             'font-size: 12px;',
+            'line-height: 1.5;',
             'text-align: center;',
           '}',
         '</style>',
         '<span>',
-          (page - 1) + ' / ' + (total - 1),
+          page > 3 ? page - 3 : '',
         '</span>',
       '</footer>'
     ].join('');

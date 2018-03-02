@@ -4,6 +4,7 @@
 
 pre {
   border: none;
+  font-size: 11px;
   padding: 10px 20px;
   background: #f7f7f7;
 }
@@ -16,7 +17,7 @@ pre {
 }
 
 .hljs {
-  color: #0971ff;
+  color: #000;
 }
 
 .hljs-keyword,
@@ -30,7 +31,7 @@ pre {
 }
 
 .hljs-comment {
-  color: #738191;
+  color: #000;
 }
 
 .hljs-string,
@@ -45,7 +46,7 @@ pre {
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #0971ff;
+  color: #000;
 }
 
 .hljs-meta,
@@ -58,7 +59,7 @@ pre {
 .hljs-template-variable,
 .hljs-link,
 .hljs-bullet {
-  color: #0971ff;
+  color: #000;
 }
 
 .hljs-emphasis {
