@@ -10,22 +10,10 @@ This is the official 0xcert protocol white paper repository, which provides tech
 
 * Run `npm run generate` to generate the PDF file.
 
-
-
-brew tap caskroom/cask
-brew cask install calibre
-
-npm install svgexport -g
-cd ~/GitBook/Library/0xcert/0xcert-protocol-whitepaper/
-gitbook pdf ./ ~/Downloads/whitepaper.pdf
-
-
-
 ## Credits
 
 * Kristijan Sedlak, *author*
 * Jure Zih, *author*
-* Romina kavčič, *illustrations*
 
 ## License (MIT)
 

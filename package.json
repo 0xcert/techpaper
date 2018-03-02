@@ -9,7 +9,7 @@
   },
   "author": "https://0xcert.org",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "markdown-pdf": "8.1.1"
   }
 }
