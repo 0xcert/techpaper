@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1000px" height="469px" viewBox="0 14 1000 469" enable-background="new 0 14 1000 469" xml:space="preserve">
+	 width="1000px" height="469px" viewBox="0 0 1000 469" enable-background="new 0 0 1000 469" xml:space="preserve">
 <title>005</title>
 <desc>Created with Sketch.</desc>
 <g id="Page-1">
@@ -20,16 +20,16 @@
 			<rect id="Sceptic-image_2_" x="274" y="258" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
 		
 			<rect id="Sceptic-image_3_" x="517" y="258" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
-		<text transform="matrix(1 0 0 1 77.864 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Deploy xCert</text>
+		<text transform="matrix(1 0 0 1 87.864 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Deploy xcert</text>
 		<text transform="matrix(1 0 0 1 176.5593 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
-		<text transform="matrix(1 0 0 1 68.008 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Smart Contract</text>
-		<text transform="matrix(1 0 0 1 310.008 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create Digital</text>
+		<text transform="matrix(1 0 0 1 78.008 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">smart contract</text>
+		<text transform="matrix(1 0 0 1 327.008 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create digital</text>
 		<text transform="matrix(1 0 0 1 413.1486 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
-		<text transform="matrix(1 0 0 1 314.936 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Asset Payload</text>
-		<text transform="matrix(1 0 0 1 568.292 369)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create hash</text>
-		<text transform="matrix(1 0 0 1 796.0081 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Mint xCert and</text>
+		<text transform="matrix(1 0 0 1 331.936 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">asset recipe</text>
+		<text transform="matrix(1 0 0 1 568.292 369)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create imprint</text>
+		<text transform="matrix(1 0 0 1 809.0081 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Mint xcert and</text>
 		<text transform="matrix(1 0 0 1 907.1252 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
-		<text transform="matrix(1 0 0 1 776.296 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Transfer Ownership</text>
+		<text transform="matrix(1 0 0 1 789.296 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">transfer ownership</text>
 		<text transform="matrix(1 0 0 1 106.432 194)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Issuer</text>
 		<text transform="matrix(1 0 0 1 837.432 194)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Holder</text>
 		<g id="Group" transform="translate(802.000000, 39.000000)">
