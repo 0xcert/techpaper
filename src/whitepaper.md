@@ -12,7 +12,7 @@
 
 # Abstract
 
-0xcert is an open source, permissionless protocol for validating existance, authenticy and ownership of digital assets on the blockchain called xcerts. It acts as a mediator between parties involved in the certification process. 0xcert is a framework with a set of on-chain and off-chain rules for managing xcerts. It's a pluggable settlement with an advanced integration layer for different dapps and relay applications. 0xcert also provides and manages an online 0xcert Explorer dapp, which enables a live view of the 0xcert network, together with interfaces for interacting with the protocol.
+0xcert is an open source, permissionless protocol for validating existance, authenticity and ownership of digital assets on the blockchain called xcerts. It acts as a mediator between parties involved in the certification process. 0xcert is a framework with a set of on-chain and off-chain rules for managing xcerts. It's a pluggable settlement with an advanced integration layer for different dapps and relay applications. 0xcert also provides and manages an online 0xcert Explorer dapp, which enables a live view of the 0xcert network, together with interfaces for interacting with the protocol.
 
 <div class="pagebreak" />
 
