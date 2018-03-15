@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="469px" viewBox="0 0 1000 469" enable-background="new 0 0 1000 469" xml:space="preserve">
+<title>005</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="_x30_05">
+		<path id="Line-2" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M242,363h32"/>
+		<path id="Line-2_1_" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M136,226v32"/>
+		<path id="Line-2_2_" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M865,226v32"/>
+		<path id="Line-2_3_" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M485,363h32"/>
+		<path id="Line-2_4_" fill="none" stroke="#AAB1B5" stroke-linecap="round" stroke-linejoin="round" d="M728,363h32"/>
+		
+			<rect id="Sceptic-image" x="31" y="258" fill="#FEE4E2" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
+		
+			<rect id="Sceptic-image_1_" x="760" y="258" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
+		
+			<rect id="Sceptic-image_2_" x="274" y="258" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
+		
+			<rect id="Sceptic-image_3_" x="517" y="258" fill="#F7F7F7" stroke="#2C2F31" stroke-linecap="round" stroke-linejoin="round" width="210" height="210"/>
+		<text transform="matrix(1 0 0 1 87.864 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Deploy xcert</text>
+		<text transform="matrix(1 0 0 1 176.5593 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
+		<text transform="matrix(1 0 0 1 78.008 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">smart contract</text>
+		<text transform="matrix(1 0 0 1 327.008 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create digital</text>
+		<text transform="matrix(1 0 0 1 413.1486 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
+		<text transform="matrix(1 0 0 1 331.936 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">asset recipe</text>
+		<text transform="matrix(1 0 0 1 568.292 369)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Create imprint</text>
+		<text transform="matrix(1 0 0 1 809.0081 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Mint xcert and</text>
+		<text transform="matrix(1 0 0 1 907.1252 358)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16"> </text>
+		<text transform="matrix(1 0 0 1 789.296 379)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">transfer ownership</text>
+		<text transform="matrix(1 0 0 1 106.432 194)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Issuer</text>
+		<text transform="matrix(1 0 0 1 837.432 194)" fill="#2C2F31" font-family="'Arial-BoldMT'" font-size="16">Holder</text>
+		<g id="Group" transform="translate(802.000000, 39.000000)">
+			<g id="Mask">
+				<circle id="path-1_1_" fill="#F7F7F7" cx="65" cy="60" r="65"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="20.055" y="3.443" width="90.214" height="133.12">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="20.055" y="3.443" width="90.214" height="133.12" id="mask-2">
+				<g filter="url(#Adobe_OpacityMaskFilter)">
+					<circle id="path-1" fill="#FFFFFF" cx="65" cy="60" r="65"/>
+				</g>
+			</mask>
+			<g mask="url(#mask-2)">
+				<g transform="translate(20.892857, 9.285714)">
+					<path id="Shape" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M59.603,66.964c-1.718,3.865,0.824,6.964,3.146,8.531c-2.438,5.212-10.354,9.669-18.479,9.669s-16.796-4.492-18.479-9.669
+						c2.321-1.346,4.898-4.643,3.111-8.531H59.603z"/>
+					<path id="Shape_1_" fill="#FFFFFF" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M46.8,74.033h-5.014c-4.354-0.005-8.529-1.737-11.607-4.817l-3.83-3.749c-5.62-5.622-8.777-13.246-8.775-21.195V24.54
+						c0-26.476,53.393-26.476,53.393,0v19.732c0.002,7.949-3.155,15.573-8.775,21.195l-3.761,3.761
+						C55.345,72.309,51.161,74.038,46.8,74.033z"/>
+					<path id="Shape_2_" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M17.573,47.012V36.565c0-3.482-2.588-4.643-4.179-3.482c-2.542,1.776,0.696,9.286,0.696,9.286
+						C12.211,43.576,14.335,47.859,17.573,47.012z"/>
+					<path id="Shape_3_" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M70.966,46.594V36.147c0-3.482,2.577-4.643,4.179-3.482c2.542,1.776-0.696,9.286-0.696,9.286
+						C76.34,43.158,74.204,47.453,70.966,46.594z"/>
+					<path id="Shape_4_" fill="#FFFFFF" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M57.896-2.76c8.949,3.796,20.893,14.393,15.995,30.028c-0.72,2.321-1.764,1.509-2.925,1.3c0,0-0.186-9.123-4.643-8.183
+						c-10.609,2.229-15.832-6.303-28.716,3.053c-1.788-2.937-0.557-9.611,3.981-13.116c-10.621,0-24.015,6.512-24.015,14.335
+						c0,0-3.552-2.623-3.842-5.212C12.396,7.768,18.39,1.824,28.861-2.632C37.388-6.26,53.126-4.779,57.896-2.76z"/>
+					
+						<circle id="Oval" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="57.618" cy="39.792" r="1.741"/>
+					
+						<circle id="Oval_1_" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="30.945" cy="39.792" r="1.741"/>
+					<path id="Shape_5_" fill="#E8F7FC" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M70.513,78.571c0,0-7.835-3.111-7.533-2.937c-2.46,5.259-10.748,9.786-18.71,9.786s-16.9-4.527-18.734-9.727l-7.208,2.995
+						C7.374,83.152,0.2,93.788,0.162,105.616v20.661h88.214v-20.893C88.346,93.67,81.311,83.111,70.513,78.571z"/>
+					<path id="Line" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M20.312,125.58v-20.925"/>
+					<path id="Line_1_" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M67.902,125.58v-20.925"/>
+					<path id="Stroke-9" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+						M51.514,56.518c0,0-3.219,3.593-7.185,3.593s-7.185-3.593-7.185-3.593"/>
+				</g>
+			</g>
+		</g>
+		<g id="Group_1_" transform="translate(71.000000, 39.000000)">
+			<path id="Stroke-5" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M17.286,7.286c0,2.212-1.788,4-4,4s-4-1.788-4-4c0-2.208,1.788-4,4-4S17.286,5.078,17.286,7.286L17.286,7.286z"/>
+			<path id="Stroke-7" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M29.214,7.286c0,2.212-1.788,4-4,4s-4-1.788-4-4c0-2.208,1.788-4,4-4S29.214,5.078,29.214,7.286L29.214,7.286z"/>
+			<path id="Stroke-9_1_" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M41.143,7.286c0,2.212-1.788,4-4,4s-4-1.788-4-4c0-2.208,1.788-4,4-4C39.355,3.286,41.143,5.078,41.143,7.286L41.143,7.286z"/>
+			<path id="Stroke-11" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M125.357,58.839V-0.357c0-2.563-2.078-4.643-4.643-4.643H4.643C2.078-5,0-2.92,0-0.357v114.911c0,2.565,2.078,4.643,4.643,4.643
+				H65"/>
+			<path id="Stroke-13" fill="none" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M0,18.214h125.357"/>
+			<path id="Fill-15" fill="#FEE4E2" stroke="#2C2F31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="
+				M102.143,102.946c-3.844,0-6.964-3.118-6.964-6.964c0-3.844,3.12-6.964,6.964-6.964c3.844,0,6.964,3.12,6.964,6.964
+				C109.107,99.829,105.987,102.946,102.143,102.946L102.143,102.946z M130,99.826v-7.684l-6.607-2.205
+				c-0.471-1.653-1.128-3.231-1.95-4.706l3.115-6.228l-5.437-5.434l-6.228,3.113c-1.472-0.822-3.05-1.479-4.706-1.948l-2.203-6.609
+				H98.3l-2.203,6.609c-1.655,0.469-3.234,1.126-4.706,1.948l-6.228-3.113l-5.437,5.434l3.115,6.228
+				c-0.822,1.474-1.479,3.053-1.95,4.706l-6.607,2.205v7.684l6.607,2.201c0.471,1.658,1.128,3.236,1.95,4.708l-3.115,6.228
+				l5.437,5.434l6.228-3.115c1.472,0.822,3.05,1.479,4.706,1.95l2.203,6.607h7.684l2.203-6.607c1.655-0.471,3.234-1.128,4.706-1.95
+				l6.228,3.115l5.437-5.434l-3.115-6.228c0.822-1.472,1.479-3.05,1.95-4.708L130,99.826z"/>
+		</g>
+	</g>
+</g>
+</svg>
