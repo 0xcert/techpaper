@@ -179,6 +179,8 @@ A minimum object should include context information and a type of an asset. The 
 
 *Figure 6: Xcert recipes describe digital assets in a way that machines can understand.*
 
+<div class="pagebreak" />
+
 ## 2.3. Certification
 
 The creation of a new xcert is called certification. The result of this mint process is a new certified non-fungible xcert token. Xcerts are assigned to digital wallets and the ownership of each xcert is immediately transferable between them.
@@ -247,7 +249,7 @@ This setup supports common business logic and serves as a decentralized proxy fo
 
 XCT tokens are the native utility tokens of the 0xcert protocol. They are compliant with the ERC-20 standard contract ABI for tokens on the Ethereum blockchain.
 
-<img src="images/9.svg" height="120" />
+<img src="images/9.svg" height="150" />
 
 *Figure 11: XCT tokens are native ERC-20 utility tokens and are used for paying fees.*
 
