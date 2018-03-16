@@ -109,6 +109,8 @@ It provides a unified blockchain based certification layer for unique digital as
 
 0xcert is an opinionated framework and supports numerous business models, used by third-party dapps. These applications sit on top of the protocol and can use XCT tokens as a fuel for their services. The dapps form a network of public and private unique digital assets certification services and offer higher-level features, that simplify and automate the certification process, provide public and private listings, rewarding mechanisms, integration gateways and more.
 
+<div class="pagebreak" />
+
 ## 1.2 Fungibility
 
 The most common tokens of today's crypto economy follow the Ethereum's ERC-20 specification and are usually tagged as cryptocurrencies. These tokens hold a value which can be crushed into smaller amounts. We can exchange just a portion of that value for some sort of service or different tokens. We call this property fungibility thus we call this kind of tokens fungible tokens.
@@ -118,6 +120,8 @@ Recently, another kind of tokens called non-fungible tokens started getting atte
 0xcert protocol introduces an xcert as a certified non-fungible token which is around 0xcert conventions and carries information about a particular digital asset. This mechanism is unique to 0xcert protocol and is described in later sections.
 
 <img src="images/11.svg" height="180" />
+
+<div class="pagebreak" />
 
 ## 1.3 Decentralization
 

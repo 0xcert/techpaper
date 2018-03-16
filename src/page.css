@@ -1,22 +1,24 @@
 @font-face {
   font-family: "Latin Modern";
-  src: url("/fonts/lmroman10-regular.otf");
+  src: url("./fonts/lmroman10-regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Latin Modern";
-  src: url("/fonts/lmroman10-bold.otf");
+  src: url("./fonts/lmroman10-bold.otf");
   font-weight: bold;
 }
 @font-face {
   font-family: "Latin Modern";
-  src: url("/fonts/lmroman10-italic.otf");
-  font-style: italic, oblique;
+  src: url("./fonts/lmroman10-italic.otf");
+  font-style: italic;
 }
 @font-face {
   font-family: "Latin Modern";
-  src: url("/fonts/lmroman10-bolditalic.otf");
+  src: url("./fonts/lmroman10-bolditalic.otf");
   font-weight: bold;
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 /* scaffold ************************/
