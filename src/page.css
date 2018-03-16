@@ -1,7 +1,28 @@
+@font-face {
+  font-family: "Latin Modern";
+  src: url("/fonts/lmroman10-regular.otf");
+}
+@font-face {
+  font-family: "Latin Modern";
+  src: url("/fonts/lmroman10-bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Latin Modern";
+  src: url("/fonts/lmroman10-italic.otf");
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Latin Modern";
+  src: url("/fonts/lmroman10-bolditalic.otf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
 /* scaffold ************************/
 
 body {
-  font-family: 'Times New Roman';
+  font-family: 'Latin Modern';
   font-size: 12px;
   line-height: 1.5;
   text-align: justify;
@@ -13,7 +34,7 @@ img {
 }
 
 h1, h2 {
-  font-family: 'Times New Roman';
+  font-family: 'Latin Modern';
   font-weight: bold;
   margin-top: 40px;
   display: block
