@@ -16,6 +16,7 @@ exports.footer = {
             'font-size: 11px;',
             'line-height: 4;',
             'text-align: center;',
+            'color: #2f2f2f;',
           '}',
         '</style>',
         '<span>',

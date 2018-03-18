@@ -53,7 +53,7 @@
   </tr>
   <tr>
     <td>2.3. Certification</td>
-    <td>07</td>
+    <td>08</td>
   </tr>
   <tr>
     <td>2.4. Verification</td>
@@ -173,7 +173,9 @@ A minimum object should include context information and a type of an asset. The 
 {
   "@context": "http://schema.org",
   "@type": "Person",
-  "name": "John Smith"
+  "firstName": "John",
+  "familyName": "Smith",
+  "email": "john@smith.com"
 }
 ```
 
@@ -187,7 +189,7 @@ The creation of a new xcert is called certification. The result of this mint pro
 
 New xcerts can be minted by the issuer, which owns the xcert smart contract or by an entity authorized by the issuer. Similar logic applies to the burning process, where the holder is also allowed to burn any xcert that he owns. 
 
-<img src="images/3.svg" height="350" />
+<img src="images/3.svg" height="320" />
 
 *Figure 7: Xcerts hold information about different digital assets and ownership.*
 
@@ -197,7 +199,7 @@ An issuer represents a trusted authority that provides a value for the intereste
 
 The issuer creates a new xcert smart contract and deploys it to the public blockchain. This makes the issuer also the owner of this smart contract, with an ability to mint new xcerts and transfer ownership to holders.
 
-<img src="images/4.svg" height="200" />
+<img src="images/4.svg" height="170" />
 
 *Figure 8: An issuer enables certification by deploying the xcert smart contract to the blockchain.*
 
@@ -239,7 +241,7 @@ In addition to the raw protocol, 0xcert provides a set of smart contracts instal
 
 Relay applications and other dapps don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid, secure and flexible non-fungible infrastructure that ensures interoperability between dapps by default.
 
-<img src="images/6.svg" height="230" />
+<img src="images/6.svg" height="210" />
 
 *Figure 10: Applications on top of the 0xcert protocol form a network of non-fungible services.*
 
@@ -249,7 +251,7 @@ This setup supports common business logic and serves as a decentralized proxy fo
 
 XCT tokens are the native utility tokens of the 0xcert protocol. They are compliant with the ERC-20 standard contract ABI for tokens on the Ethereum blockchain.
 
-<img src="images/9.svg" height="150" />
+<img src="images/9.svg" height="90" />
 
 *Figure 11: XCT tokens are native ERC-20 utility tokens and are used for paying fees.*
 
@@ -302,3 +304,7 @@ In addition to the protocol itself, the 0xcert entity provides and manages an on
 [*] Open Badges, https://goo.gl/FDKJmC
 
 [*] MIT Media Lab Digital Certificates, https://goo.gl/aWHn7R
+
+[*] JSON Schema, http://json-schema.org
+
+[*] Permanent Identifiers for the Web, https://w3id.org

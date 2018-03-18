@@ -29,6 +29,8 @@ body {
   line-height: 1.5;
   text-align: justify;
   padding: 85px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 img {
@@ -75,5 +77,5 @@ h1 {
 }
 
 .description {
-  margin-bottom: 180px;
+  margin-bottom: 280px;
 }
