@@ -163,11 +163,9 @@ It is identified with an ID, it has an URI that points to the public JSON metada
 
 ## 2.2. Conventions
 
-A digital asset in the 0xcert protocol is defined and described in the form of a specifically designed JSON object, which conforms to RFC-7159 and follows the mapping format defined by the JSON schema specification.
+A digital asset in the 0xcert protocol is defined and described in the form of a specifically designed JSON object, which conforms to RFC-7159 and follows the mapping format defined by the JSON Schema specification.
 
-The protocol provides conventions for these objects, thus every digital asset in the 0xcert protocol has its own JSON schema definition. The schema represents a technical specification of a particular digital asset, which explains the JSON object structure, each property details and a description of each data key. These documents are defined and approved by the interested community engaging the protocol. The community can propose updates and new conventions, which can then be included in the protocol, based on the majority consensus.
-
-The 0xcert protocol can cover all sorts of digital assets. A simple imaginary JSON schema, that describes a person, could look something like this:
+The 0xcert protocol can cover all sorts of digital assets. A simple imaginary schema, that describes a person, could look something like this:
 
 ```json
 {
@@ -190,7 +188,11 @@ The 0xcert protocol can cover all sorts of digital assets. A simple imaginary JS
 
 *Figure 6: Xcert schemas describe digital assets in a way that machines can understand.*
 
-The naming of JSON properties must follow the schema.org specification when possible. This is to enable an easy way to convert a digital asset data object into JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order.
+Every digital asset in the 0xcert protocol has its own JSON Schema definition. The schema represents a technical specification of a particular digital asset. It explains the JSON object structure, validation and each property details. 
+
+The naming of JSON properties must follow the schema.org specification when possible. This is to enable an easy way to convert a digital asset data object into JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order. 0xcert protocol extends the JSON Schema specification and allows also to specify a list of fields that describe a proof and a list of fields representing metadata.
+
+Schema documents are defined and approved by the interested community engaging the protocol. The community can propose updates and new conventions, which can then be included in the protocol, based on the majority consensus.
 
 <div class="pagebreak" />
 
