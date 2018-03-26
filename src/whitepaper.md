@@ -165,13 +165,14 @@ It is identified with an ID, it has an URI that points to the public JSON metada
 
 A digital asset in the 0xcert protocol is defined and described in the form of a specifically designed JSON object, which conforms to RFC-7159 and follows the mapping format defined by the JSON schema specification.
 
-The protocol provides conventions for these objects, thus every digital asset in the 0xcert protocol has its own Xcert recipe. The Xcert recipe represents a technical specification of a particular digital asset, which explains the JSON object structure, each property details and a description of each data key. These documents are defined and approved by the interested community engaging the protocol. The community can propose updates and new conventions, which can then be included in the protocol, based on the majority consensus.
+The protocol provides conventions for these objects, thus every digital asset in the 0xcert protocol has its own JSON schema definition. The schema represents a technical specification of a particular digital asset, which explains the JSON object structure, each property details and a description of each data key. These documents are defined and approved by the interested community engaging the protocol. The community can propose updates and new conventions, which can then be included in the protocol, based on the majority consensus.
 
-The 0xcert protocol can cover all sorts of digital assets. A simple imaginary Xcert recipe, that describes a person, could look something like this:
+The 0xcert protocol can cover all sorts of digital assets. A simple imaginary JSON schema, that describes a person, could look something like this:
 
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://specs.0xcert.org/schemas/person.json",
   "description": "A person (alive or fictional).",
   "properties": {
     "name": {
@@ -179,12 +180,15 @@ The 0xcert protocol can cover all sorts of digital assets. A simple imaginary Xc
       "type": "string"
     }
   },
+  "proof": ["name"],
+  "meta": [],
+  "required": ["name"],
   "title": "Person",
   "type": "object"
 }
 ```
 
-*Figure 6: Xcert recipes describe digital assets in a way that machines can understand.*
+*Figure 6: Xcert schemas describe digital assets in a way that machines can understand.*
 
 The naming of JSON properties must follow the schema.org specification when possible. This is to enable an easy way to convert a digital asset data object into JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order.
 
@@ -192,7 +196,7 @@ The naming of JSON properties must follow the schema.org specification when poss
 
 ## 2.3. Certification
 
-The creation or minting of a new Xcert is called certification. The result is a new certified non-fungible Xcert token. Xcerts are assigned to digital wallets and the ownership of each Xcert is immediately transferable among them.
+The minting process of a new Xcert is called certification. The result is a new certified non-fungible Xcert token. Xcerts are assigned to digital wallets and the ownership of each Xcert is immediately transferable among them.
 
 New Xcerts can be minted by the issuer, who owns the Xcert smart contract or minted by an entity authorized by the issuer. The issuer can immediately transfer a new Xcert to a holder who then becomes the owner. Similar logic applies to the burning process, where the holder is also allowed to burn any Xcert that he owns. 
 
@@ -210,15 +214,15 @@ The issuer creates a new Xcert smart contract and deploys it to the public block
 
 *Figure 8: An issuer enables certification by deploying the Xcert smart contract to the blockchain.*
 
-The minting process of a new Xcert starts by creating an Xcert recipe. As explained earlier in the document, this object holds information about a particular digital asset and can include product-related data, issuer details, holder identity information and more. The protocol provides this kind of convention for each digital asset and specifies a list of required and optional keys, related type information and usage details.
+The minting process of a new Xcert starts by creating a JSON object with information about a digital asset. As explained earlier in the document, this object holds information about a particular digital asset and can include product-related data, issuer details, holder identity information and more. The protocol provides a convention for each digital asset and specifies a list of required and optional keys, related type information and usage details.
 
-When the recipe object is created, issuer converts it into a cryptographic hash, which is an imprint of a digital asset and represents a proof. The protocol allows different cryptographic algorithms to be used and it is up to the issuer to decide the appropriate level of security. 
+When the JSON object is created, issuer converts it into a cryptographic hash, which is an imprint of a digital asset and represents a proof. The protocol allows different cryptographic algorithms to be used and it is up to the issuer to decide the appropriate level of security. 
 
 For the final step in the certification process, the issuer submits the cryptographic hash, together with holder’s wallet address to the Xcert smart contract on the blockchain. 
 
-The minting process creates a new Xcert and assigns the ownership to the provided holder. When the certification is completed, the issuer sends the recipe object over an arbitrary communication medium to the holder, so he will be able to provide the proof of ownership for the particular digital asset or burn it at his discretion. 
+The minting process creates a new Xcert and assigns the ownership to the provided holder. When the certification is completed, the issuer sends the JSON data object over an arbitrary communication medium to the holder, so he will be able to provide the proof of ownership for the particular digital asset or burn it at his discretion. 
 
-All parties involved in the certification process are expected to keep a copy of the Xcert recipe object, in the same way as they keep a copy of their digital wallet credentials. They can store this information locally or can authorize third-party dapps to do that on their behalf.
+All parties involved in the certification process are expected to keep a copy of the JSON data object, in the same way as they keep a copy of their digital wallet credentials. They can store this information locally or can authorize third-party dapps to do that on their behalf.
 
 In terms of trust, the issuer is responsible to prove and promote their account authenticity information over arbitrary communication media when needed.
 
@@ -226,13 +230,13 @@ In terms of trust, the issuer is responsible to prove and promote their account 
 
 0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownership. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside Xcerts on the blockchain.
 
-In order to obtain valid information about a particular digital asset, a holder must disclose information to the skeptical party, and send the explicit certification recipe for the requested asset, through an arbitrary communication medium. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset imprint exists and can thus be verified.
+In order to obtain valid information about a particular digital asset, a holder must disclose information to the skeptical party, and send the explicit JSON data object for the requested asset, through an arbitrary communication medium. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset imprint exists and can thus be verified.
 
 <img src="images/5.svg" height="250" />
 
 *Figure 9: Xcerts carry a trustless proof of digital asset existence and ownership.*
 
-Based on the data received from a holder, the party creates a cryptographic hash from the provided certification recipe object and then verifies that it matches with the one stored in the provided Xcert on the blockchain. When the hash strings are equal the information can be treated as valid and the holder can be trusted.
+Based on the data received from a holder, the party creates a cryptographic hash from the provided JSON data object and then verifies that it matches with the one stored in the provided Xcert on the blockchain. When the hash strings are equal the information can be treated as valid and the holder can be trusted.
 
 In terms of dapps, the verification process is usually automated. Some dapps might expect a holder to have the Xcert stored in his digital wallet. Holders are able to have all Xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables a third-party to quickly and easily verify any provided information without unnecessary interaction.
 
