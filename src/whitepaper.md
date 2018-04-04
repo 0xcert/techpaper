@@ -3,7 +3,7 @@
   Open protocol for certified non-fungible tokens
 </div>
 <div class="info">
-  Version 0.10<br/>
+  Version 0.11<br/>
   Authors: Kristijan Sedlak, Jure Zih<br/>
   0xcert.org
 </div>
@@ -294,31 +294,28 @@ In addition to the protocol itself, the 0xcert company provides and manages an o
 
 # 5. References
 
-[*] Deed Standard, https://goo.gl/kh5qaS
+<div class="left">
+Non-fungible Token Standard,<br/>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
 
-[*] Non-fungible Token Standard, https://goo.gl/xAzeAi
+Decentralized Identifiers (DIDs),<br/>https://w3c-ccg.github.io/did-spec/
 
-[*] Decentralized Identifiers (DIDs), https://goo.gl/8MYACk
+JSON Schema,<br/>http://json-schema.org
 
-[*] JSON for Linking Data, https://goo.gl/KogugR
+Permanent Identifiers for the Web,<br/>https://w3id.org
 
-[*] Structured Data, https://goo.gl/kAzGS1
+Structured Data,<br/>https://developers.google.com/search/docs/guides/intro-structured-data
 
-[*] JSON-LD Best Practices, https://goo.gl/P8NhrF
+JSON for Linking Data,<br/>https://json-ld.org/
 
-[*] JSON-LD JavaScript implementation, https://goo.gl/HgEYJE
+JSON-LD Best Practices,<br/>https://json-ld.org/spec/latest/json-ld-api-best-practices/
 
-[*] JavaScript Object Notation or JSON, https://goo.gl/S3j1fV
+JavaScript Object Notation or JSON,<br/>https://en.wikipedia.org/wiki/JSON
 
-[*] 0x project, https://0xproject.com
+0x project,<br/>https://0xproject.com
 
-[*] Blockcerts, https://www.blockcerts.org
+Blockcerts,<br/>https://www.blockcerts.org
 
-[*] Open Badges, https://goo.gl/FDKJmC
+Open Badges,<br/>https://www.imsglobal.org/sites/default/files/Badges/OBv2p0/index.html
 
-[*] MIT Media Lab Digital Certificates, https://goo.gl/aWHn7R
-
-[*] JSON Schema, http://json-schema.org
-
-[*] Permanent Identifiers for the Web, https://w3id.org
-
+MIT Media Lab Digital Certificates,<br/>https://certs.media.mit.edu/
+</div>

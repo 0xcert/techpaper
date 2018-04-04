@@ -68,6 +68,10 @@ h1 {
   padding-top: 10px;
 }
 
+.left {
+  text-align: left;
+}
+
 .title {
   margin-top: 260px;
   font-size: 45px;
