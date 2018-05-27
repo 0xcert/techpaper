@@ -38,11 +38,12 @@ img {
   margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Latin Modern';
   font-weight: bold;
-  margin-top: 40px;
-  display: block
+  margin-top: 35px;
+  display: block;
+  text-align: left;
 }
 
 h1 {
@@ -59,11 +60,13 @@ h1 {
 
 .contents {
   width: 100%;
+  font-size: 11px;
 }
 .contents td+td {
   text-align: right;
 }
 .contents__section td {
+  font-size: 12px;
   font-weight: bold;
   padding-top: 10px;
 }

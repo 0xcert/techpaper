@@ -113,19 +113,29 @@
     <td>2.2.6. Verification</td>
     <td>15</td>
   </tr>
-
-
-
-
-
   <tr class="contents__section">
-    <td>3. Business layer</td>
-    <td>17</td>
+    <td>3. Framework</td>
+    <td>18</td>
   </tr>
   <tr>
-    <td>3.1. Third-party services</td>
-    <td>12</td>
+    <td>3.1. Devkit (SDK)</td>
+    <td>18</td>
   </tr>
+  <tr>
+    <td>3.2. Decentralized Exchange (DEX)</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>3.3. Decentralized Minter (DXM)</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>3.4. Continuous Integration</td>
+    <td>21</td>
+  </tr>
+
+
+
   <tr>
     <td>3.2. Protocol token (XCT)</td>
     <td>13</td>
@@ -408,7 +418,7 @@ A cryptographic proof is an imprint of an asset which at the same time ensures a
 
 The 0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownership. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside Xcerts on the blockchain.
 
-In order to obtain valid information about a particular digital asset, a holder must disclose asset information to a third-party. If the proof is created by using the 0xcert protocol's mechanism, then not all the data are required in the verification process and a skeptical party can selectively verify only some asset fields. For this to work, a holder must provide enough information for the skeptical party to be able to recalculate Merkle tree root hash from the provided visible and hashed leafs. When the recalculated hash equals to the one stored in the Xcert the information can be treated as valid and the holder can be trusted. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset exists.
+In order to obtain valid information about a particular digital asset, a holder must disclose asset information to a third-party. If the proof is created by using the 0xcert protocol's mechanism, then not all the data are required in the verification process and a third-party can selectively verify only some asset fields. For this to work, a holder must provide enough information for the third-party to be able to recalculate Merkle tree root hash from the provided visible and hashed leafs. When the recalculated hash equals to the one stored in the Xcert the information can be treated as valid and the holder can be trusted. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset exists.
 
 <img src="images/5.svg" height="250" />
 
@@ -416,49 +426,61 @@ In order to obtain valid information about a particular digital asset, a holder 
 
 In terms of dapps, the verification process is usually automated. Some dapps might expect a holder to have the Xcert stored in his digital wallet. Holders are able to have all Xcerts stored in their digital wallets and share the proof of ownership with anyone at will. This enables a third-party to quickly and easily verify any provided information without unnecessary interaction.
 
-
-
-
-
-
-
-
-
-
-
 <div class="pagebreak" />
 
-# 3. Business Layer
+# 3. Framework
 
-0xcert is a pluggable settlement with an advanced integration layer for different dapps and relay applications. In addition, the 0xcert protocol represents a low-level certification layer and defines the steps for different certification flows, strengthened by the conventions. The protocol allows for building higher-level applications and services, to enable advanced non-fungible features, usage simplifications, and automatization.
+The 0xcert framework consists of multiple parts which enable application developers to build secure decentralized applications with the support for custom business models. The 0xcert protocol is an opinionated all-in-one framework. It is blockchain agnostic, provides conventions, and includes powerful tools for building decentralized non-fungible applications.
 
-## 3.1. Third-party services
-
-In addition to the raw protocol, 0xcert provides a set of smart contracts installed on the blockchain, with supporting SDKs, which cover different business models. This allows easy integration of the 0xcert protocol into existing systems.
-
-Relay applications and other dapps don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid, secure and flexible non-fungible infrastructure that ensures interoperability between dapps by default.
+In addition to the raw protocol logic, the 0xcert framework includes libraries and a set of smart contracts already installed on the blockchain. The 0xcert framework is a pluggable settlement with an advanced integration layer for different dapps and relay applications. 
 
 <img src="images/6.svg" height="210" />
 
-*Figure 10: Applications on top of the 0xcert protocol form a network of non-fungible services.*
+*Figure 10: Dapps on top of the 0xcert protocol form a network of interoperable non-fungible services.*
 
-This setup supports common business logic and serves as a decentralized proxy for handling communication between services and certification parties. Applications can use the protocol’s XCT token, for payments or as a fuel for their services.
+## 3.1. Devkit (SDK)
 
-## 3.2. Protocol token (XCT)
+The framework tries to hide away the complex blockchain layer thus wraps the 0xcert protocol features into an easy to use SDK. This empowers developers with powerful decentralized tools that developers can use as a standard API library. 
 
-According to William Mougayar, author of "The business blockchain", a token is "a unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
+The 0xcert protocol can thus be easily integrated into existing systems. Applications don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid, secure and flexible non-fungible infrastructure that ensures interoperability between dapps by default.
 
-XCT tokens are the native utility tokens of the 0xcert protocol. They are compliant with the ERC-20 standard contract ABI for tokens on the Ethereum blockchain.
+## 3.2. Decentralized Exchange (DEX)
 
-<img src="images/9.svg" height="90" />
+DEX is one of the key supporting components in the 0xcert framework. DEX represents a set of smart contracts installed on the blockchain which allow for a trustless exchange of multiple different types of fungible and non-fungible tokens as single atomic operations.
 
-*Figure 11: XCT tokens are native ERC-20 utility tokens and are used for paying fees.*
+DEX consists of multiple contracts. To make it upgrade-able the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DEX contracts while data stay untouched. 
 
-XCT represents a protocol token - a utility token - and is introduced to align certification parties with dapps and assures that the proposed protocol can be adhered to.
+A proxy is best explained as a smart contract that allows or rejects access to some key functionality and is controlled by a multisig wallet or a DAO. This way proxies can be trusted since they only allow access to smart contracts that were approved through the DAO process.
 
-With the infrastructure built around a system of smart contracts and dapps, its primary role is to provide the incentive mechanisms and support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol, and similar to gas on the Ethereum blockchain it covers fees for issuing and verifying Xcerts.
+The DEX process of exchanging tokens has several steps:
+* Parties come to an off-chain agreement that party A will exchange fungible and non-fungible tokens with party B.
+* Party A creates claims (blockchain signed messages) of the agreed data then sends these data together with claims to party B.
+* Party A allows the proxies to transfer tokens on his/her behalf.
+* Party B also allows the proxies to transfer tokens on his/her behalf.
+* Party B submits the agreed data with claims to the swapper smart contract.
+* The swapper performs an atomic operation which exchanges the tokens.
 
-## 3.3. Continuous integration
+If any step of the process is not correct the swapper will not perform the operation. So if party B tries to change the data in a way that he/she would transfer less or different tokens the operation would fail because the claims would not match with the data party B provided.
+
+## 3.3. Decentralized Minter (DXM)
+
+DXM is another important component of the 0xcert framework. It allows for the trustless minting of Xcert tokens directly to recipients.
+
+The DXM can mint and exchange Xcert tokens for other fungible and non-fungible tokens in a single atomic. It also enables an issuer to delegate the mint execution and payment of blockchain fees to the recipient.
+
+DXM consists of multiple contracts. To make it upgrade-able the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DXM contracts while data stay untouched.
+
+The minting of Xcert tokens using DXM is performed in multiple steps:
+* Parties come to an off-chain agreement that the issuer will mint a specific Xcert for the recipient in exchange for some tokens.
+* The issuer creates claims (blockchain signed messages) of the agreed data then sends these data together with claims to the participant.
+* The issuer allows the proxies to mint the Xcert token on his/her behalf.
+* The recipient allows the proxies to transfer tokens on his/her behalf.
+* The recipient submits the agreed data with claims to the minter smart contract.
+* The minter performs an atomic operation which creates a new Xcert token and transfers recipient tokens to the issuer.
+
+If any step of the process is not correct the minter will not perform the operation. So if the recipient tries to change the data in a way that he/she would transfer fewer tokens the operation would fail because the issuer's blockchain signature would not match with the data the recipient provided. If the issuer or the recipient would not allow proxies to operate on their behalf the operation would also fail.
+
+## 3.4. Continuous Integration
 
 A smart contract cannot be changed after it is deployed to the blockchain. Changes can be applied only by deploying a new contract at a new address.
 
@@ -466,42 +488,84 @@ The protocol may include a decentralized governance (DAO) mechanism to allow the
 
 <div class="pagebreak" />
 
-# 4. 0xcert explorer
+## 4. Protocol token (ZXC)
 
-The purpose of the 0xcert company, as the core team behind the 0xcert protocol, is to provide a foundation for trustless, certified, non-fungible tokens on the blockchain and to unify the community as much as possible. The company tends to bring value to the open-source community engaged with the 0xcert protocol, to connect individuals and groups working in the area of non-fungibility or certification, and to provide resources and support for the related community driven incentives.
+According to William Mougayar, author of "The business blockchain", a token is "a unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
 
-In addition to the protocol itself, the 0xcert company provides and manages an online 0xcert Explorer dapp, which enables a live view of the 0xcert network, together with interfaces for interacting with the protocol, which represents the central hub for non-fungible tokens on the blockchain.
+The ZXC tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with the Ethereum's ERC-20 standard.
 
-<img src="images/7.svg" height="250" />
+<img src="images/9.svg" height="90" />
 
-*Figure 12: 0xcert Explorer is an open-source dapp, which includes a block explorer, search, API interfaces, W3C DID resolver and analytics for decentralized Xcerts on the blockchain.*
+*Figure 11: ZXC token is a native utility token of the 0xcert protocol.*
+
+ZXC token is a protocol token and is introduced to align certification parties with dapps. With the infrastructure built around a system of smart contracts and dapps, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. ZXC is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain it may play a role in all sorts of protocol activities.
 
 <div class="pagebreak" />
 
-# 5. References
+# 5. 0xcert Labs
+
+The 0xcert team is determined to continuously bring value to the open-source community. Our mission is to empower developers with powerful tools and useful non-fungible applications.
+
+We believe that we can only understand developers, the blockchain and decentralization if we actually use the protocol and build on top of it. We formed the 0xcert Labs as the 0xcert discovery group which will work on the latest innovations in the space of nonfungibility, decentralization and the blockchain. 
+
+In addition to the 0xcert protocol development, the purpose of the 0xcert team, as the core team behind the 0xcert protocol, is to provide a foundation for trustless, certified, non-fungible tokens on the blockchain and to manage and unify the community by connecting individuals and groups working in the area of non-fungibility or certification, and to provide resources and support for the related community driven incentives.
+
+## 5.1. ERC-721 Implementation
+
+We already successfully completed the complete implementation of the ERC-721 non-fungible token standard for the Ethereum blockchain. 
+
+The purpose of this implementation is to provide a good starting point for anyone who wants to use and develop non-fungible tokens on the Ethereum blockchain. Instead of re-implementing ERC-721, developers will use this code which has gone through multiple audits and we hope it will be extensively used by the community in the future.
+
+## 5.1. 0xcert Scanner
+
+The 0xcert team provides and manages an online 0xcert Scanner dapp. It enables a live view of the 0xcert network. This represents the central hub for non-fungible tokens on the blockchain.
+
+## 5.2. 0xcert Identity
+
+The 0xcert team will soon do the showcase of identities as non-fungible tokens on the blockchain. This will be our first big use case which will show the community the enormous potential of this new technology.
+
+## 5.3. 0xcert DEX
+
+The 0xcert team is already working on a decentralized application on top of the 0xcert protocol for exchanging fungible and non-fungible tokens.
+
+## 5.4. 0xcert DXM
+
+The 0xcert team is already working on the first all-in-one decentralized application on top of the 0xcert protocol for minting Xcert and other non-fungible tokens.
+
+<div class="pagebreak" />
+
+# 6. References
 
 <div class="left">
+
 Non-fungible Token Standard,<br/>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
 
 Decentralized Identifiers (DIDs),<br/>https://w3c-ccg.github.io/did-spec/
 
+Cryptographic hash function,<br/>https://en.wikipedia.org/wiki/Cryptographic_hash_function
+
+Cryptocurrency wallet,<br/>https://en.wikipedia.org/wiki/Cryptocurrency_wallet
+
+Metadata,<br/>https://en.wikipedia.org/wiki/Metadata
+
+GDPR,<br/>https://www.eugdpr.org/
+
+JSON RFC-7159,<br/>https://en.wikipedia.org/wiki/JSON
+
+Digital asset,<br/>https://en.wikipedia.org/wiki/Digital_asset
+
 JSON Schema,<br/>http://json-schema.org
 
-Permanent Identifiers for the Web,<br/>https://w3id.org
+JSON-LD,<br/>https://json-ld.org/
 
-Structured Data,<br/>https://developers.google.com/search/docs/guides/intro-structured-data
+HTTPS protocol,<br/>https://en.wikipedia.org/wiki/HTTPS
 
-JSON for Linking Data,<br/>https://json-ld.org/
+Link header,<br/>https://www.w3.org/wiki/LinkHeader
 
-JSON-LD Best Practices,<br/>https://json-ld.org/spec/latest/json-ld-api-best-practices/
+ERC-721 Standard,<br/>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
 
-JavaScript Object Notation or JSON,<br/>https://en.wikipedia.org/wiki/JSON
+ERC-721 Implementation,<br/>https://github.com/0xcert/ethereum-erc721
 
-0x project,<br/>https://0xproject.com
+What is ERC-721,<br/>http://erc721.org/
 
-Blockcerts,<br/>https://www.blockcerts.org
-
-Open Badges,<br/>https://www.imsglobal.org/sites/default/files/Badges/OBv2p0/index.html
-
-MIT Media Lab Digital Certificates,<br/>https://certs.media.mit.edu/
 </div>
