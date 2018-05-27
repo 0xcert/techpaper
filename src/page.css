@@ -41,7 +41,7 @@ img {
 h1, h2, h3 {
   font-family: 'Latin Modern';
   font-weight: bold;
-  margin-top: 35px;
+  margin-top: 30px;
   display: block;
   text-align: left;
 }
@@ -69,6 +69,15 @@ h1 {
   font-size: 12px;
   font-weight: bold;
   padding-top: 10px;
+}
+
+.references b {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+.references a {
+  font-size: 8px;
 }
 
 .left {

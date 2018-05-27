@@ -3,7 +3,7 @@
   Open protocol for certified non-fungible tokens
 </div>
 <div class="info">
-  Version 0.2<br/>
+  Version 1.0<br/>
   Authors: Kristijan Sedlak, Jure Zih<br/>
   0xcert.org
 </div>
@@ -23,95 +23,95 @@
 <table class="contents">
   <tr class="contents__section">
     <td>1. Introduction</td>
-    <td>01</td>
+    <td>02</td>
   </tr>
   <tr>
     <td>1.1. Overview</td>
-    <td>01</td>
+    <td>02</td>
   </tr>
   <tr>
     <td>1.2. Fungibility</td>
-    <td>03</td>
+    <td>04</td>
   </tr>
   <tr>
     <td>1.3. Decentralization</td>
-    <td>03</td>
+    <td>04</td>
   </tr>
   <tr class="contents__section">
     <td>2. Specification</td>
-    <td>05</td>
+    <td>06</td>
   </tr>
   <tr>
     <td>2.1. Xcert</td>
-    <td>06</td>
+    <td>07</td>
   </tr>
   <tr>
     <td>2.1.1. Paradigm</td>
-    <td>06</td>
+    <td>07</td>
   </tr>
   <tr>
     <td>2.1.2. Smart Contract</td>
-    <td>06</td>
+    <td>07</td>
   </tr>
   <tr>
     <td>2.1.3. Asset Proof</td>
-    <td>07</td>
+    <td>08</td>
   </tr>
   <tr>
     <td>2.1.4. On-chain Data</td>
-    <td>07</td>
-  </tr>
-  <tr>
-    <td>2.1.5. Off-chain Data</td>
-    <td>08</td>
-  </tr>
-  <tr>
-    <td>2.1.6. Minting</td>
-    <td>08</td>
-  </tr>
-  <tr>
-    <td>2.1.7. Decentralized Identifier (DID)</td>
     <td>09</td>
   </tr>
   <tr>
-    <td>2.1.8. Burnable Xcert</td>
+    <td>2.1.5. Off-chain Data</td>
+    <td>09</td>
+  </tr>
+  <tr>
+    <td>2.1.6. Minting</td>
+    <td>09</td>
+  </tr>
+  <tr>
+    <td>2.1.7. Decentralized Identifier (DID)</td>
     <td>10</td>
+  </tr>
+  <tr>
+    <td>2.1.8. Burnable Xcert</td>
+    <td>111</td>
   </tr>
   <tr>
     <td>2.1.9. Revokable Xcert</td>
-    <td>10</td>
+    <td>11</td>
   </tr>
   <tr>
     <td>2.1.10. Pausable Xcert</td>
-    <td>10</td>
+    <td>11</td>
   </tr>
   <tr>
     <td>2.2. Conventions</td>
-    <td>11</td>
-  </tr>
-  <tr>
-    <td>2.2.1. Paradigm</td>
-    <td>11</td>
-  </tr>
-  <tr>
-    <td>2.2.2. Asset Data</td>
     <td>12</td>
   </tr>
   <tr>
+    <td>2.2.1. Paradigm</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>2.2.2. Asset Data</td>
+    <td>13</td>
+  </tr>
+  <tr>
     <td>2.2.3. On-chain Data</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>2.2.4. Off-chain Data</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>2.2.5. Certification</td>
     <td>14</td>
   </tr>
   <tr>
-    <td>2.2.6. Verification</td>
+    <td>2.2.4. Off-chain Data</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>2.2.5. Certification</td>
     <td>15</td>
+  </tr>
+  <tr>
+    <td>2.2.6. Verification</td>
+    <td>16</td>
   </tr>
   <tr class="contents__section">
     <td>3. Framework</td>
@@ -131,26 +131,40 @@
   </tr>
   <tr>
     <td>3.4. Continuous Integration</td>
-    <td>21</td>
-  </tr>
-
-
-
-  <tr>
-    <td>3.2. Protocol token (XCT)</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>3.3. Continuous integration</td>
-    <td>13</td>
+    <td>20</td>
   </tr>
   <tr class="contents__section">
-    <td>4. 0xcert explorer</td>
-    <td>15</td>
+    <td>4. Protocol token (XCT)</td>
+    <td>22</td>
   </tr>
   <tr class="contents__section">
-    <td>5. References</td>
-    <td>16</td>
+    <td>5. 0xcert Labs</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>5.1. ERC-721 Implementation</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>5.2. 0xcert Scanner</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>5.3. 0xcert Identity</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>5.4. 0xcert DEX</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>5.5. 0xcert DXM</td>
+    <td>25</td>
+  </tr>
+
+  <tr class="contents__section">
+    <td>6. References</td>
+    <td>26</td>
   </tr>
 </table>
 
@@ -254,15 +268,13 @@ An Xcert does not include actual asset data, only the proof of it. This ensures 
 
 This concept makes the 0xcert protocol unique and extends the usability to a whole new level. 
 
-<img src="images/10.svg" height="140" />
+<img src="images/10.svg" height="180" />
 
 *Figure 4: An Xcert is a non-fungible token that carries asset proof.*
 
 ### 2.1.4. On-chain Data
 
 We can attach additional public data to each Xcert. The parameters which are attached directly on the token itself usually participate in atomic swaps or other on-chain operations. 
-
-<div class="pagebreak" />
 
 ### 2.1.5. Off-chain Data
 
@@ -284,7 +296,7 @@ The minting process creates a new unique Xcert for a particular asset and assign
 
 Anyone can become an issuer by deploying a new Xcert smart contract to the blockchain. An issuer should represent a trusted authority that provides value for the interested public. The issuer uses Xcerts on the blockchain to provide proofs of ownership for its digitized assets.
 
-The minting process starts by asset certification process which is covered later in this document. The result of the certification is asset data objects and a cryptographic proof of a digital asset. An issuer submits these content, together with additional protocol configuration and holder address to the blockchain which creates a new Xcert token and assigns the ownership to the provided holder. Optionally an issuer publishes the public metadata as well.
+The minting process starts with asset certification process which is covered later in this document. The result of the certification is asset data objects and a cryptographic proof of a digital asset. An issuer submits these content, together with additional protocol configuration and holder address to the blockchain which creates a new Xcert token and assigns the ownership to the provided holder. Optionally an issuer publishes the public metadata as well.
 
 <img src="images/4.svg" height="200" />
 
@@ -488,17 +500,17 @@ The protocol may include a decentralized governance (DAO) mechanism to allow the
 
 <div class="pagebreak" />
 
-## 4. Protocol token (ZXC)
+## 4. Protocol token (XCT)
 
 According to William Mougayar, author of "The business blockchain", a token is "a unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
 
-The ZXC tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with the Ethereum's ERC-20 standard.
+The XCT tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with the Ethereum's ERC-20 standard.
 
-<img src="images/9.svg" height="90" />
+<img src="images/9.svg" height="130" />
 
-*Figure 11: ZXC token is a native utility token of the 0xcert protocol.*
+*Figure 11: XCT token is a native utility token of the 0xcert protocol.*
 
-The ZXC token is a protocol token and is introduced to align certification parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. ZXC is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
+The XCT token is a protocol token and is introduced to align certification parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
 
 Over time a decentralized governance may be introduced to further strengthen the 0xcert community. The protocol token may play a key role when creating a decentralized autonomous organization. The protocol token may not only be used as a rewarding mechanism but also as a distributed voting mechanism.
 
@@ -520,19 +532,19 @@ We already successfully completed the complete implementation of the ERC-721 non
 
 The purpose of this implementation is to provide a good starting point for anyone who wants to use and develop non-fungible tokens on the Ethereum blockchain. Instead of re-implementing ERC-721, developers will use this code which has gone through multiple audits and we hope it will be extensively used by the community in the future.
 
-## 5.1. 0xcert Scanner
+## 5.2. 0xcert Scanner
 
 The 0xcert team provides and manages an online 0xcert Scanner dapp. It enables a live view of the 0xcert network. This represents the central hub for non-fungible tokens on the blockchain.
 
-## 5.2. 0xcert Identity
+## 5.3. 0xcert Identity
 
 The 0xcert team will soon do the showcase of identities as non-fungible tokens on the blockchain. This will be our first big use case which will show the community the enormous potential of this new technology.
 
-## 5.3. 0xcert DEX
+## 5.4. 0xcert DEX
 
 The 0xcert team is already working on a decentralized application on top of the 0xcert protocol for exchanging fungible and non-fungible tokens.
 
-## 5.4. 0xcert DXM
+## 5.5. 0xcert DXM
 
 The 0xcert team is already working on the first all-in-one decentralized application on top of the 0xcert protocol for minting Xcert and other non-fungible tokens.
 
@@ -540,36 +552,25 @@ The 0xcert team is already working on the first all-in-one decentralized applica
 
 # 6. References
 
-<div class="left">
+<div class="left references">
 
-Non-fungible Token Standard,<br/>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
-
-Decentralized Identifiers (DIDs),<br/>https://w3c-ccg.github.io/did-spec/
-
-Cryptographic hash function,<br/>https://en.wikipedia.org/wiki/Cryptographic_hash_function
-
-Cryptocurrency wallet,<br/>https://en.wikipedia.org/wiki/Cryptocurrency_wallet
-
-Metadata,<br/>https://en.wikipedia.org/wiki/Metadata
-
-GDPR,<br/>https://www.eugdpr.org/
-
-JSON RFC-7159,<br/>https://en.wikipedia.org/wiki/JSON
-
-Digital asset,<br/>https://en.wikipedia.org/wiki/Digital_asset
-
-JSON Schema,<br/>http://json-schema.org
-
-JSON-LD,<br/>https://json-ld.org/
-
-HTTPS protocol,<br/>https://en.wikipedia.org/wiki/HTTPS
-
-Link header,<br/>https://www.w3.org/wiki/LinkHeader
-
-ERC-721 Standard,<br/>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
-
-ERC-721 Implementation,<br/>https://github.com/0xcert/ethereum-erc721
-
-What is ERC-721,<br/>http://erc721.org/
+<b>Non-fungible Token Standard</b>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
+<b>Decentralized Identifiers (DIDs)</b>https://w3c-ccg.github.io/did-spec/
+<b>Cryptographic hash function</b>https://en.wikipedia.org/wiki/Cryptographic_hash_function
+<b>Cryptocurrency wallet</b>https://en.wikipedia.org/wiki/Cryptocurrency_wallet
+<b>Metadata</b>https://en.wikipedia.org/wiki/Metadata
+<b>GDPR</b>https://www.eugdpr.org/
+<b>JSON RFC-7159</b>https://en.wikipedia.org/wiki/JSON
+<b>Digital asset</b>https://en.wikipedia.org/wiki/Digital_asset
+<b>JSON Schema</b>http://json-schema.org
+<b>JSON-LD</b>https://json-ld.org/
+<b>HTTPS protocol</b>https://en.wikipedia.org/wiki/HTTPS
+<b>Link header</b>https://www.w3.org/wiki/LinkHeader
+<div class="pagebreak" />
+<b>ERC-721 Standard</b>https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md
+<b>ERC-721 Implementation</b>https://github.com/0xcert/ethereum-erc721
+<b>What is ERC-721</b>http://erc721.org/
+<b>Decentralized autonomous organization</b>https://en.wikipedia.org/wiki/The_DAO_(organization)
+<b>Token-Curated Registries 1.0</b>https://medium.com/@ilovebagels/token-curated-registries-1-0-61a232f8dac7
 
 </div>
