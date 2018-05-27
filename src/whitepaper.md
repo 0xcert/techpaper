@@ -498,7 +498,11 @@ The ZXC tokens are the native utility tokens of the 0xcert protocol. These are f
 
 *Figure 11: ZXC token is a native utility token of the 0xcert protocol.*
 
-ZXC token is a protocol token and is introduced to align certification parties with dapps. With the infrastructure built around a system of smart contracts and dapps, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. ZXC is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain it may play a role in all sorts of protocol activities.
+The ZXC token is a protocol token and is introduced to align certification parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. ZXC is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
+
+Over time a decentralized governance may be introduced to further strengthen the 0xcert community. The protocol token may play a key role when creating a decentralized autonomous organization. The protocol token may not only be used as a rewarding mechanism but also as a distributed voting mechanism.
+
+The 0xcert ecosystem may soon introduce issuer verification registry (IVR). It would be a form of a token curated registry proposed by Mike Goldin. The registry would list all issuers verified by the community. In the future, one of the fundamental problems in the blockchain space may become the authenticity of issuers. At the moment there is no strong incentive that would award fairness and honesty in the blockchain space. A self-sustaining verification registry which would use staking and rewarding mechanisms based on the 0xcert protocol token seems like a good solution. Other solutions may be introduced in the future in order to protect our users and the 0xcert community reputation. 
 
 <div class="pagebreak" />
 
