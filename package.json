@@ -1,15 +1,15 @@
 {
-  "name": "0xcert-whitepaper",
-  "version": "0.1.0",
+  "name": "0xcert-techpaper",
+  "version": "1.0.0",
   "description": "0xcert protocol implementation for Ethereum blockchain.",
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "generate": "markdown-pdf -c ./src ./src/whitepaper.md -o ./dist/0xcert-protocol.pdf -s ./src/page.css -z ./src/highlight.css -h ./src/runnings.js -f A4 -r portrait -b 0mm"
+    "generate": "markdown-pdf -c ./src ./src/paper.md -o ./dist/0xcert-protocol-technical-paper.pdf -s ./src/page.css -z ./src/highlight.css -h ./src/runnings.js -f A4 -r portrait -b 0mm"
   },
   "author": "https://0xcert.org",
   "license": "MIT",
   "devDependencies": {
-    "markdown-pdf": "8.1.1"
+    "markdown-pdf": "^8.1.1"
   }
 }

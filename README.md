@@ -1,4 +1,4 @@
-# [0xcert](https://0xcert.org)-yellowpaper
+# [0xcert](https://0xcert.org) Technical Paper
 
 > Official technical document for 0xcert protocol.
 
