@@ -59,7 +59,7 @@
   </tr>
   <tr>
     <td>2.1.4. On-chain Data</td>
-    <td>09</td>
+    <td>08</td>
   </tr>
   <tr>
     <td>2.1.5. Off-chain Data</td>
@@ -236,8 +236,6 @@ Certification can benefit greatly from this new paradigm. By storing hashed data
 
 *Figure 3: Users can interact with the protocol manually or through higher-level dapps.*
 
-Features of the 0xcert protocol are described in the technical specification documents which are publically available in the official 0xcert repository on GitHub. The documents are updated according to the dynamics of the 0xcert protocol development.
-
 ## 2.1. Xcert
 
 An Xcert represents a one-of-a-kind asset in form of a non-fungible token on the blockchain. It holds a proof of a real-world asset and has all the properties of a non-fungible token.
@@ -256,11 +254,11 @@ An Xcert smart contract is an extended non-fungible token smart contract. It fol
 
 An Xcert smart contract holds assets of a particular 0xcert convention. This makes the contract opinionated and forces predictable data.
 
-A smart contract should always expose information about the used convention and smart contract interfaces and other capabilities. Following the Ethereum's ERC-165 standard to implement this features is considered a good practice.
+A smart contract should always expose information about the used convention, smart contract interfaces and other capabilities. Following the Ethereum's ERC-165 standard to implement this features is considered a good practice.
 
 ### 2.1.3. Asset Proof
 
-A very important and a unique part of an Xcert is a cryptographic proof which is stored in token itself.
+A very important and a unique part of an Xcert is a cryptographic proof which is stored in the token itself.
 
 An Xcert can thus carry an imprint of a unique real-world asset. The proof is the result of the 0xcert certification process which is described later in this document. It represents a cryptographic hash build from asset data and serves as a decentralized proof of an asset on the blockchain.
 
@@ -275,6 +273,8 @@ This concept makes the 0xcert protocol unique and extends the usability to a who
 ### 2.1.4. On-chain Data
 
 We can attach additional public data to each Xcert. The parameters which are attached directly on the token itself usually participate in atomic swaps or other on-chain operations. 
+
+<div class="pagebreak" />
 
 ### 2.1.5. Off-chain Data
 
@@ -342,7 +342,7 @@ A digital asset is a data object which holds information about a real-world asse
 
 <img src="images/3.svg" height="320" />
 
-*Figure 6: Asset data are defined by a convention.*
+*Figure 6: Asset data is defined by a convention.*
 
 A digital asset in the 0xcert protocol is defined and described in the form of specifically designed JSON objects, which conform to RFC-7159 and follow the mapping format defined by the JSON Schema specification.
 
@@ -384,7 +384,7 @@ Some assets need additional parameters stored directly on the Xcert. This data a
 
 ### 2.2.4. Off-chain Data
 
-Optionally an asset can also provide dynamic metadata on some public URI. These data provide additional information about an asset, should be publically accessible to anyone can, and can change over time.
+Optionally an asset can also provide dynamic metadata on some public URI. These data provide additional information about an asset, should be publically accessible to anyone, and can change over time.
 
 Every Xcert should have at least the basic metadata JSON Schema definition like this:
 
