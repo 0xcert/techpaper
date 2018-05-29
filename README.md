@@ -2,7 +2,7 @@
 
 > Official technical document for 0xcert protocol.
 
-This is the official 0xcert protocol technical paper repository, which provides technical details of the 0xcert protocol. The latest version of the 0xcert protocol is described here: [0xcert-protocol.pdf](dist/0xcert-protocol.pdf)
+This is the official 0xcert protocol technical paper repository, which provides technical details of the 0xcert protocol. The latest version of the 0xcert protocol is described here: [0xcert-protocol.pdf](dist/0xcert-protocol-technical-paper.pdf)
 
 ## Development
 
