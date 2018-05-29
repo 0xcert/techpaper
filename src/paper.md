@@ -12,8 +12,8 @@
 
 # Abstract
 
-0xcert is an open source, a permission-less protocol for certified non-fungible tokens on the blockchain. These tokens are stored in cryptographic wallets and are owned by users. In addition to common functions for transferring and managing standard non-fungible tokens, the 0xcert protocol provides another layer of conventions for creating certified non-fungible tokens for unique assets. These tokens are called Xcerts and are created through a custom minting process. Xcerts represent opinionated non-fungible tokens, which also hold an imprint of an asset. With 0xcert protocol, we can validate a proof of existence, authenticity, and ownership of these digital assets without third-party involvement.
-
+0xcert is an open source permissionless protocol for non-fungible tokens on the blockchain. These tokens are stored in cryptographic wallets and are owned by users. In addition to common functions for transferring and managing standard non-fungible tokens, the 0xcert protocol provides another layer of conventions for creating certified non-fungible tokens for unique assets. These tokens are called Xcerts and are created through a custom minting process. Xcerts represent opinionated non-fungible tokens, which also hold an imprint of an asset. With 0xcert protocol, we can validate a proof of existence, authenticity, and ownership of these digital assets without third-party involvement.
+								
 0xcert is a framework with a set of on-chain and off-chain rules for managing Xcerts and other standard non-fungible tokens. Our mission is to equip application developers with a secure blockchain agnostic platform, powerful tools, and community embraced conventions for managing non-fungible tokens. 0xcert is a pluggable settlement with an advanced integration layer for different dapps and relay applications. This enables developers to focus on the application layer and quickly build applications for issuing university certificates, KYC applications, applications for loyalty programs, warranties, badges, credits or even a decentralized non-fungible exchange.
 
 <div class="pagebreak" />
@@ -31,7 +31,7 @@
   </tr>
   <tr>
     <td>1.2. Fungibility</td>
-    <td>04</td>
+    <td>03</td>
   </tr>
   <tr>
     <td>1.3. Decentralization</td>
@@ -75,7 +75,7 @@
   </tr>
   <tr>
     <td>2.1.8. Burnable Xcert</td>
-    <td>111</td>
+    <td>11</td>
   </tr>
   <tr>
     <td>2.1.9. Revokable Xcert</td>
@@ -172,21 +172,19 @@
 
 # 1. Introduction
 
-0xcert is an open source, a permission-less protocol for certified non-fungible tokens on the blockchain. These tokens are stored in cryptographic wallets and are owned by users. In addition to various common functions for transferring and managing standard non-fungible tokens, the 0xcert protocol provides an additional layer of conventions for creating certified non-fungible tokens from unique assets. These tokens are called Xcerts and are created through a custom minting process.
-
-Xcerts represent standard non-fungible tokens, which also hold an imprint of an asset. With 0xcert protocol, we can further validate a proof of existence, authenticity, and ownership of these assets without third-party involvement.
-
-The first implementation of the 0xcert protocol is focusing on the Ethereum blockchain. The 0xcert protocol tries to be blockchain agnostic, thus we would like to support other blockchains as well.
+0xcert is an open-source permissionless protocol for non-fungible tokens on the blockchain. These tokens are stored in cryptographic wallets and are owned by users. In addition to various common functions for transferring and managing standard non-fungible tokens, the 0xcert protocol provides an additional layer of conventions for creating non-fungible tokens from unique assets. These tokens are called Xcerts and are created through a custom minting process.
+								
+Xcerts represent standard non-fungible tokens, which also hold an imprint of an asset. With 0xcert protocol, we can further validate proof of existence, authenticity, and ownership of these assets without third-party involvement.
+								
+The first implementation of the 0xcert protocol is focusing on the Ethereum blockchain. The 0xcert protocol is designed to be blockchain agnostic, and supports building on other blockchains as well.
 
 ## 1.1. Overview
 
-The blockchain is an amazing technology however, it is complex in its nature. Writing smart contracts is difficult and could be a very perilous task. This fact prevents many people from adopting the blockchain technology and building their decentralized applications on top of it.
-
-Our mission is to equip application developers with a secure blockchain settlement, powerful tools and community embraced conventions for managing non-fungible tokens. 0xcert protocol extends the non-fungible paradigm with an opinionated certification layer for unique assets which is based on the 0xcert conventions. This allows for creating certified non-fungible tokens on the blockchain, which also carry an imprint of a unique real-world asset.
-
-The protocol supports a wide range of use cases, where non-fungible assets and ownership play a role. Because the data are stored in decentralized blocks, the information can fully be trusted and verified by anyone and anywhere.
-
-It provides a unified blockchain based certification layer for unique assets on the blockchain, which eliminates the need for a middleman between parties involved in the process.
+The advent of blockchain has redefined technology and set the course for the future of everything.  But despite being an amazing technology it is very complex in its nature. Writing and deploying smart contracts is difficult and can be a very perilous task. This fact prevents many people from adopting blockchain technology and building their decentralized applications on top of it.
+								
+Our mission is to equip application developers with a secure blockchain settlement, powerful tools and community embraced conventions for managing non-fungible tokens. 0xcert protocol extends the non-fungible paradigm with an opinionated certification and standardization layer for unique assets which is based on the 0xcert conventions. This allows for creating certified non-fungible tokens on the blockchain, which also carry an imprint of a unique real-world asset.
+								
+The protocol supports a wide range of use cases, where non-fungible assets and ownership play a role. Because the data are stored in decentralized blocks, the information can be fully trusted and verified by anyone and anywhere.
 
 The 0xcert protocol is an open-source project so anyone can use the fully functional 0xcert protocol with no limitations. Developers have the ability to manually mint, burn, verify and transfer Xcerts. The protocol uses a publicly accessible network of digital wallets and smart contracts on the blockchain, making it extensible through third-party modules and a variety of dapps.
 
@@ -194,27 +192,25 @@ The 0xcert protocol is an open-source project so anyone can use the fully functi
 
 *Figure 1: 0xcert protocol can act as an intermediary between parties.*
 
-0xcert is an opinionated framework and supports numerous business models used by third-party dapps. These applications sit on top of the protocol and can use protocol tokens as a fuel for their service.
-
-The dapps form a network of public and private certification services for unique assets and offer higher-level features that simplify and automate the certification process, provide public and private listings, rewarding mechanisms, integration gateways and more.
-
-<div class="pagebreak" />
+0xcert is an opinionated framework and supports numerous business models used by third-party dapps. These applications sit on top of the protocol and can use the protocol tokens as a fuel for their service.
+								
+The dapps form a network of public and private services for unique assets and offer higher-level features that simplify and automate the process of creating and managing non-fungible tokens, provide public and private listings, rewarding mechanisms, integration gateways and more.
 
 ## 1.2. Fungibility
 
-The most common tokens of today's crypto economy follow the Ethereum's ERC-20 specification. These tokens carry a price, which can be divided into smaller amounts. One can exchange just a portion of that price for a service or for different tokens. This is called fungibility, thus these are called fungible tokens.
-
-Recently, another kind of token called non-fungible tokens started getting attention in the crypto community. Though we new non-fungible tokens before, it actually all started with Cryptokitties - tradable collectibles - which set the foundation for the now accepted ERC-721 standard. Unlike ERC-20 identical tokens, which carry a price, non-fungible tokens are unique and carry some sort of data.
-
-The 0xcert protocol goes even further and introduces an Xcert as a certified, non-fungible token based on ERC-721 and 0xcert conventions, and it carries information about a particular unique asset. This mechanism is unique to the 0xcert protocol and is described in later sections.
+The most common tokens of today’s crypto economy follow Ethereum’s ERC2-20 specification. These tokens are so called fungible tokens, because tokens of the same kind can be mutually interchangeable. If we make an analogy with fiat currency, a dollar bill can be exchanged for any other dollar bill, which does not create any difference for the holder. 
+								
+Recently, another kind of token called non-fungible tokens started getting attention in the crypto community. Though we knew non-fungible tokens before, it actually all started with Crypto Kitties - tradable collectibles - which set the foundation for the now accepted ERC-721 standard. Unlike ERC-20 identical tokens, non-fungible tokens are unique and carry some sort of data.
+								
+The 0xcert protocol goes even further and introduces an Xcert as a standardized and certified non-fungible token based on ERC-721 and 0xcert conventions that carries information about a particular unique asset. This mechanism is unique to the 0xcert protocol and is described in later sections.
 
 <img src="images/11.svg" height="180" />
 
 ## 1.3. Decentralization
 
-Certification represents compliance with specific requirements. It can cover products and their components, services, people, and systems.
+Certification represents assurance by an independent accredited body of conformity to specific requirements. It can cover products and their components, services, people, and systems.								
 
-Digitalization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable to various exploits, hacks, and falsifications. 
+Digitalization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable to various exploits, hacks, and falsifications.
 
 The protocol utilizes the blockchain, a distributed ledger technology that was first built to support the Bitcoin cryptocurrency. Blockchain can be best described as a distributed ledger that maintains a list of records called blocks. Each block has a timestamp and is built on top of an already existing block, preventing any data from being altered retroactively.
 
@@ -224,7 +220,7 @@ The protocol utilizes the blockchain, a distributed ledger technology that was f
 
 Blockchain offers a unique solution to the problem of secure online transactions. Due to its transparency and distribution of information to many decentralized blockchain nodes, it is nearly impossible to manipulate existing data records, making it potentially suitable for recording events, records, identities, certificates, transactions and other documentation.
 
-Certification can benefit greatly from this new paradigm. By storing hashed data on the blockchain, individuals, companies, and institutions can keep a decentralized record of their certificate proofs, while maintaining sensitive data completely private. At the same time, all certified records, their issuers, and owners can be easily authenticated and referenced.
+We can benefit greatly from this new paradigm. By storing hashed data on the blockchain, individuals, companies, and institutions can keep a decentralized record of their certificate proofs, while maintaining sensitive data completely private. At the same time, all certified records, their issuers, and owners can be easily authenticated and referenced.
 
 <div class="pagebreak" />
 
@@ -240,31 +236,31 @@ Certification can benefit greatly from this new paradigm. By storing hashed data
 
 An Xcert represents a one-of-a-kind asset in form of a non-fungible token on the blockchain. It holds a proof of a real-world asset and has all the properties of a non-fungible token.
 
-### 2.1.1. Paradigma 
+### 2.1.1. Paradigm
 
 Digital assets on the blockchain as non-fungible tokens represent a new paradigm which enables application developers to build advanced and secure applications for managing real-world assets. Users hold asset ownership rights in their cryptographic wallets. They are able to exchange tokens between wallets and have control over the tokens they own.
-
+								
 The 0xcert protocol puts unique assets on the blockchain as non-fungible tokens. These tokens are called Xcerts and exist on the blockchain as an item of a specifically designed smart contract.
-
-An Xcert is an item of a specifically designed smart contract which implements the non-fungible functionality. An Xcert is identified by an ID which is unique per Xcert smart contract and is always assigned to a cryptographic wallet. Besides the unique ID, a token can carry a proof of a digital asset, arbitrary on-chain data and a URI to additional off-chain data.
+								
+An Xcert is an item of a specifically designed smart contract which implements the non-fungible functionality. An Xcert is identified by an ID which is unique per Xcert smart contract and is always assigned to a cryptographic wallet. Besides the unique ID, a token can carry a proof of a digital asset, arbitrary on- chain data and a URI to additional off-chain data.
 
 ### 2.1.2. Smart Contract 
 
-An Xcert smart contract is an extended non-fungible token smart contract. It follows the Ethereum’s ERC-721 specification which thus makes it compliant with the non-fungible token standard. 
+An Xcert smart contract is an extended non-fungible token smart contract. It follows the Ethereum’s ERC-721 specification which thus makes it compliant with the non-fungible token standard.
 
 An Xcert smart contract holds assets of a particular 0xcert convention. This makes the contract opinionated and forces predictable data.
-
-A smart contract should always expose information about the used convention, smart contract interfaces and other capabilities. Following the Ethereum's ERC-165 standard to implement this features is considered a good practice.
+								
+A smart contract should always expose information about the used convention and smart contract interfaces and other capabilities. Following the Ethereum's ERC-165 standard to implement this features is considered a good practice.
 
 ### 2.1.3. Asset Proof
 
 A very important and a unique part of an Xcert is a cryptographic proof which is stored in the token itself.
-
+								
 An Xcert can thus carry an imprint of a unique real-world asset. The proof is the result of the 0xcert certification process which is described later in this document. It represents a cryptographic hash build from asset data and serves as a decentralized proof of an asset on the blockchain.
-
+								
 An Xcert does not include actual asset data, only the proof of it. This ensures data confidentiality because no information is disclosed to the general public and the actual content is always kept private to the involved parties only.
-
-This concept makes the 0xcert protocol unique and extends the usability to a whole new level. 
+								
+This concept makes the 0xcert protocol unique and extends the usability to a whole new level.
 
 <img src="images/10.svg" height="180" />
 
@@ -272,44 +268,44 @@ This concept makes the 0xcert protocol unique and extends the usability to a who
 
 ### 2.1.4. On-chain Data
 
-We can attach additional public data to each Xcert. The parameters which are attached directly on the token itself usually participate in atomic swaps or other on-chain operations. 
+We can attach additional public data to each Xcert. The parameters which are attached directly on the token itself usually participate in atomic swaps or other on-chain operations.
 
 <div class="pagebreak" />
 
 ### 2.1.5. Off-chain Data
 
 Storing data on the blockchain could be expensive. Sometimes we would want to provide also dynamic data about a particular Xcert. Managing data directly on the blockchain would not scale. By exposing additional information about a token as an off-chain data file solves many problems and makes the system flexible and scalable.
-
+								
 Each Xcert includes a URI to a publicly available metadata file. This data object is a specifically designed JSON object, which conforms to RFC-7159 and follows the mapping format defined by the JSON Schema specification.
-
+								
 The naming of JSON properties should follow the schema.org dictionary when possible. This is to enable an easy way to convert a data into a JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order.
-
+								
 A metadata file should be served through a secure HTTPS connection on the public web. The response returns data in "application/schema+json" content type. It also includes a Link header pointing to JSON Schema definition file of the received metadata object. The JSON Schema definition varies based on the token capabilities and the asset it represents.
-
-Off-chain metadata JSON files are not mandatory but are highly recommended. We also recommend storing these files in the decentralized system instead of hosting them by a company itself. 
+								
+Off-chain metadata JSON files are not mandatory but are highly recommended. We also recommend storing these files in the decentralized system instead of hosting them by a company itself.
 
 ### 2.1.6. Minting
 
 The process of issuing new Xcerts is called "minting". This is enabled by the Xcert smart contract deployed on the blockchain.
 
-The minting process creates a new unique Xcert for a particular asset and assigns it to a digital wallet. A new Xcert can be minted by the issuer, who owns the Xcert smart contract or by an entity authorized by the issuer. 
-
+The minting process creates a new unique Xcert for a particular asset and assigns it to a digital wallet. A new Xcert can be minted by the issuer, who owns the Xcert smart contract or by an entity authorized by the issuer.
+								
 Anyone can become an issuer by deploying a new Xcert smart contract to the blockchain. An issuer should represent a trusted authority that provides value for the interested public. The issuer uses Xcerts on the blockchain to provide proofs of ownership for its digitized assets.
-
-The minting process starts with asset certification process which is covered later in this document. The result of the certification is asset data objects and a cryptographic proof of a digital asset. An issuer submits these content, together with additional protocol configuration and holder address to the blockchain which creates a new Xcert token and assigns the ownership to the provided holder. Optionally an issuer publishes the public metadata as well.
+								
+The minting process starts with asset certification process which is covered later in this document. The result of the certification are asset data objects and a cryptographic proof of a digital asset. An issuer submits this content, together with additional protocol configuration and holder address to the blockchain which creates a new Xcert token and assigns the ownership to the provided holder. Optionally an issuer publishes the public metadata as well.
 
 <img src="images/4.svg" height="200" />
 
-*Figure 5: The mingin process creates a new Xcert on the blockchain.*
+*Figure 5: The mintin process creates a new Xcert on the blockchain.*
 
-In terms of a trust, the issuer is responsible to prove and promote their account authenticity information over arbitrary communication media when needed.
+In terms of trust, the issuer is responsible to prove and promote their account authenticity information over arbitrary communication media when needed.
 
 ### 2.1.7. Decentralized Identifier (DID)
 
 A decentralized identifier uniquely identifies an Xcert. A decentralized identifier or simply a DID is a string format which uniquely identifies an Xcert on the blockchain.
 
 An Xcert identification consists of multiple pieces of information. The 0xcert protocol uses DIDs to uniquely describe an asset on the blockchain as a URI that can be resolved as a publicly available resource.
-
+								
 All DIDs are defined as "did:xcert:{URI}". The URI consists of multiple information joined with "/" following the sequence:
 
 | Index | Include | Description
@@ -324,11 +320,11 @@ Some digital assets can become invalid over time. By making Xcerts burnable, a u
 
 ### 2.1.9. Revokable Xcert
 
-Sometimes an issuer requires more control over tokens management. By making Xcerts revokable the issuer can remove the token at any time. A user, in that case, has no control. This functionality is sometimes needed but it is not recommended. An issuer should always provide a good explanation for including this feature in the Xcert smart contract.
+Sometimes an issuer requires more control over token management. By making Xcerts revocable the issuer can remove the token at any time. A user, in that case, has no control. This functionality is sometimes needed but it is not recommended. An issuer should always provide a good explanation for including this feature in the Xcert smart contract.
 
 ### 2.1.10. Pausable Xcert
 
-Issuers can make Xcert smart contract pausable. This means that an issuer has the ability to pause and resume Xcert transfers. This feature is especially useful when migrating or upgrading issuer's local database. 
+Issuers can make Xcert smart contract pausable. This means that an issuer has the ability to pause and resume Xcert transfers. This feature is especially useful when migrating or upgrading issuer's local database.
 
 <div class="pagebreak" />
 
@@ -342,22 +338,22 @@ A digital asset is a data object which holds information about a real-world asse
 
 <img src="images/3.svg" height="320" />
 
-*Figure 6: Asset data is defined by a convention.*
+*Figure 6: Asset data are defined by a convention.*
 
 A digital asset in the 0xcert protocol is defined and described in the form of specifically designed JSON objects, which conform to RFC-7159 and follow the mapping format defined by the JSON Schema specification.
-
+								
 Every digital asset in the 0xcert protocol has its own JSON Schema definition for describing the asset, on-chain properties, and off-chain metadata. The schemas represent a technical specification of a particular digital asset, which explains the JSON data object structure.
-
-The naming of JSON properties follows the schema.org dictionary when possible. This enables an easy way to convert data object into a JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order.
-
+								
+The naming of JSON properties follows the schema.org dictionary when possible. This enables an easy way to convert the data object into a JSON-LD format. The convention also expects the JSON keys to be defined in alphabetical order.
+								
 Schema documents are defined and approved by the interested community engaging the protocol. The community can propose updates and new conventions, which can then be included in the protocol, based on the majority consensus.
 
 ### 2.2.2. Asset Data
 
 The main convention file is a JSON Schema which describes a data structure of a digital asset. These data are usually considered private and the content is known only to the issuer and token owner.
-
+								
 This data structure is used for creating a cryptographic proof for a digital asset which is carried by the Xcert token.
-
+								
 The 0xcert protocol can cover all sorts of digital assets. A simple imaginary schema, that describes a person, could look something like this:
 
 ```json
@@ -380,11 +376,11 @@ The 0xcert protocol can cover all sorts of digital assets. A simple imaginary sc
 
 ### 2.2.3. On-chain Data
 
-Some assets need additional parameters stored directly on the Xcert. This data are usually used by the blockchain mechanics like atomic swaps where a transaction can be performed only under certain conditions. 
+Some assets need additional parameters stored directly in the Xcert. This data is usually used by blockchain mechanics like atomic swaps where a transaction can be performed only under certain conditions.
 
 ### 2.2.4. Off-chain Data
 
-Optionally an asset can also provide dynamic metadata on some public URI. These data provide additional information about an asset, should be publically accessible to anyone, and can change over time.
+Optionally an asset can also provide dynamic metadata on some public URI. These data provide additional information about an asset, should be publicly accessible to anyone and can change over time.
 
 Every Xcert should have at least the basic metadata JSON Schema definition like this:
 
@@ -416,21 +412,21 @@ Every Xcert should have at least the basic metadata JSON Schema definition like 
 
 ### 2.2.5. Certification
 
-An Xcert carries a proof of a digital asset data. It is a cryptographic hash which serves as a decentralized proof of a digital asset on the blockchain. The process of converting digital asset data into a cryptographic proof is called "certification". Tokens that hold these cryptographic proofs are thus called certified tokens.
+An Xcert carries a proof of a unique asset data. It is a cryptographic hash which serves as a decentralized proof of a unique asset on the blockchain. The process of converting unique asset data into a cryptographic proof is called "certification". Tokens that hold these cryptographic proofs are thus called certified tokens.
 
 The 0xcert protocol provides a mechanism for converting the main data object into a cryptographic hash. The mechanism first flattens the JSON structure and sorts data parts by JSON keys. Values are then hashed into Merkle tree leaves using the sha256 algorithm and finally calculated into Merkle tree root hash which represents the actual asset proof which we store in the Xcert.
 
 The certification process starts by creating asset data objects. The main data object is then converted into a cryptographic proof. When the certification is completed, the issuer sends the main JSON data object over an arbitrary communication medium to the holder, so he will be able to provide the proof of ownership for the particular digital asset.
-
+								
 All parties involved in the certification process are expected to keep a copy of the JSON data object, in the same way as they keep a copy of their digital wallet credentials. They can store this information locally or can authorize third-party dapps to do that on their behalf.
 
 ### 2.2.6. Verification
 
 A cryptographic proof is an imprint of an asset which at the same time ensures asset data confidentiality. This proof is used to verify the existence and authenticity of a digital asset.
-
+								
 The 0xcert protocol allows for trustless verification of any kind of digital asset existence and related ownership. Anyone is able to verify some information based on digital asset imprint - the cryptographic proof - stored inside Xcerts on the blockchain.
-
-In order to obtain valid information about a particular digital asset, a holder must disclose asset information to a third-party. If the proof is created by using the 0xcert protocol's mechanism, then not all the data are required in the verification process and a third-party can selectively verify only some asset fields. For this to work, a holder must provide enough information for the third-party to be able to recalculate Merkle tree root hash from the provided visible and hashed leaves. When the recalculated hash equals to the one stored in the Xcert the information can be treated as valid and the holder can be trusted. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset exists.
+								
+In order to obtain valid information about a particular digital asset, a holder must disclose asset information to a third-party. If the proof is created by using the 0xcert protocol's mechanism, then not all the data are required in the verification process and a third-party can selectively verify only some asset fields. For this to work, a holder must provide enough information for the third-party to be able to recalculate the proof. When the recalculated hash equals to the one stored in the Xcert the information can be treated as valid and the holder can be trusted. A holder must also provide the appropriate Xcert smart contract address on the blockchain, where the digital asset exists.
 
 <img src="images/5.svg" height="250" />
 
@@ -443,7 +439,7 @@ In terms of dapps, the verification process is usually automated. Some dapps mig
 # 3. Framework
 
 The 0xcert framework consists of multiple parts which enable application developers to build secure decentralized applications with the support for custom business models. The 0xcert protocol is an opinionated all-in-one framework. It is blockchain agnostic, provides conventions, and includes powerful tools for building decentralized non-fungible applications.
-
+								
 In addition to the raw protocol logic, the 0xcert framework includes libraries and a set of smart contracts already installed on the blockchain. The 0xcert framework is a pluggable settlement with an advanced integration layer for different dapps and relay applications. 
 
 <img src="images/6.svg" height="210" />
@@ -452,16 +448,16 @@ In addition to the raw protocol logic, the 0xcert framework includes libraries a
 
 ## 3.1. Devkit (SDK)
 
-The framework tries to hide away the complex blockchain layer thus wraps the 0xcert protocol features into an easy to use SDK. This empowers developers with powerful decentralized tools that developers can use as a standard API library. 
+The framework tries to hide away the complex blockchain layer thus wraps the 0xcert protocol features into an easy to use SDK. This empowers developers with powerful decentralized tools that developers can use as a standard API library.
 
 The 0xcert protocol can thus be easily integrated into existing systems. Applications don't have to struggle with the low-level blockchain complexity and can thus immediately start using a solid, secure and flexible non-fungible infrastructure that ensures interoperability between dapps by default.
 
 ## 3.2. Decentralized Exchange (DEX)
 
 DEX is one of the key supporting components in the 0xcert framework. DEX represents a set of smart contracts installed on the blockchain which allow for a trustless exchange of multiple different types of fungible and non-fungible tokens as single atomic operations.
-
-DEX consists of multiple contracts. To make it upgrade-able the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DEX contracts while data stay untouched. 
-
+								
+DEX consists of multiple contracts. To make it upgrade-able the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DEX contracts while data stay untouched.
+								
 A proxy is best explained as a smart contract that allows or rejects access to some key functionality and is controlled by a multisig wallet or a DAO. This way proxies can be trusted since they only allow access to smart contracts that were approved through the DAO process.
 
 The DEX process of exchanging tokens has several steps:
@@ -477,11 +473,11 @@ If any step of the process is not correct the swapper will not perform the opera
 ## 3.3. Decentralized Minter (DXM)
 
 DXM is another important component of the 0xcert framework. It allows for the trustless minting of Xcert tokens directly to recipients.
-
-The DXM can mint and exchange Xcert tokens for other fungible and non-fungible tokens in a single atomic. It also enables an issuer to delegate the mint execution and payment of blockchain fees to the recipient.
-
-DXM consists of multiple contracts. To make it upgrade-able the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DXM contracts while data stay untouched.
-
+								
+The DXM can mint and exchange Xcert tokens for other fungible and non-fungible tokens in a single atomic operation. It also enables an issuer to delegate the mint execution and payment of blockchain fees to the recipient.
+								
+DXM consists of multiple contracts. To make it upgradeable the smart contracts communicate through proxy smart contracts. This way we can upgrade the core DXM contracts while data stay untouched.
+								
 The minting of Xcert tokens using DXM is performed in multiple steps:
 * Parties come to an off-chain agreement that the issuer will mint a specific Xcert for the recipient in exchange for some tokens.
 * The issuer creates claims (blockchain signed messages) of the agreed data then sends these data together with claims to the participant.
@@ -503,14 +499,14 @@ The protocol may include a decentralized governance (DAO) mechanism to allow the
 ## 4. Protocol token (XCT)
 
 According to William Mougayar, author of "The business blockchain", a token is "a unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
-
-The XCT tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with the Ethereum's ERC-20 standard.
+								
+The XCT tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with Ethereum's ERC-20 standard.
 
 <img src="images/9.svg" height="130" />
 
 *Figure 11: XCT token is a native utility token of the 0xcert protocol.*
 
-The XCT token is a protocol token and is introduced to align certification parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
+The XCT token is a protocol token and is introduced to align issuing parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
 
 Over time a decentralized governance may be introduced to further strengthen the 0xcert community. The protocol token may play a key role when creating a decentralized autonomous organization. The protocol token may not only be used as a rewarding mechanism but also as a distributed voting mechanism.
 
@@ -521,15 +517,15 @@ The 0xcert ecosystem may soon introduce issuer verification registry (IVR). It w
 # 5. 0xcert Labs
 
 The 0xcert team is determined to continuously bring value to the open-source community. Our mission is to empower developers with powerful tools and useful non-fungible applications.
-
-We believe that we can only understand developers, the blockchain and decentralization if we actually use the protocol and build on top of it. We formed the 0xcert Labs as the 0xcert discovery group which will work on the latest innovations in the space of nonfungibility, decentralization and the blockchain. 
-
-In addition to the 0xcert protocol development, the purpose of the 0xcert team, as the core team behind the 0xcert protocol, is to provide a foundation for trustless, certified, non-fungible tokens on the blockchain and to manage and unify the community by connecting individuals and groups working in the area of non-fungibility or certification, and to provide resources and support for the related community driven incentives.
+								
+We believe that we can only understand developers, the blockchain and decentralization if we actually use the protocol and build on top of it. We formed the 0xcert Labs as the 0xcert discovery group which will work on the latest innovations in the space of nonfungibility, decentralization and the blockchain.
+								
+In addition to the 0xcert protocol development, the purpose of the 0xcert team, as the core team behind the 0xcert protocol, is to provide a foundation for trustless, certified, non-fungible tokens on the blockchain and to manage and unify the community by connecting individuals and groups working in the area of non-fungibility and to provide resources and support for the related community driven incentives.
 
 ## 5.1. ERC-721 Implementation
 
-We already successfully completed the complete implementation of the ERC-721 non-fungible token standard for the Ethereum blockchain. 
-
+We already successfully completed the complete implementation of the ERC-721 non-fungible token standard for the Ethereum blockchain.
+								
 The purpose of this implementation is to provide a good starting point for anyone who wants to use and develop non-fungible tokens on the Ethereum blockchain. Instead of re-implementing ERC-721, developers will use this code which has gone through multiple audits and we hope it will be extensively used by the community in the future.
 
 ## 5.2. 0xcert Scanner
@@ -538,7 +534,7 @@ The 0xcert team provides and manages an online 0xcert Scanner dapp. It enables a
 
 ## 5.3. 0xcert Identity
 
-The 0xcert team will soon do the showcase of identities as non-fungible tokens on the blockchain. This will be our first big use case which will show the community the enormous potential of this new technology.
+The 0xcert team will soon showcase identities as non-fungible tokens on the blockchain. This will be our first big use case which will show the community the enormous potential of this new technology.
 
 ## 5.4. 0xcert DEX
 
@@ -546,7 +542,7 @@ The 0xcert team is already working on a decentralized application on top of the 
 
 ## 5.5. 0xcert DXM
 
-The 0xcert team is already working on the first all-in-one decentralized application on top of the 0xcert protocol for minting Xcert and other non-fungible tokens.
+The 0xcert team is already working on the first all-in-one decentralized application on top of the 0xcert protocol for minting Xcerts and other non-fungible tokens.
 
 <div class="pagebreak" />
 
