@@ -1,4 +1,4 @@
-# [0xcert](https://0xcert.org) Technical Paper
+<img src="assets/cover.png" />
 
 > Official technical document for 0xcert protocol.
 
