@@ -208,19 +208,15 @@ The 0xcert protocol goes even further and introduces an Xcert as a standardized 
 
 ## 1.3. Decentralization
 
-Certification represents assurance by an independent accredited body of conformity to specific requirements. It can cover products and their components, services, people, and systems.								
-
-Digitalization of different assets has already introduced a new way of storing and sharing information online, making certification cheaper and more convenient for all involved parties. However, the ability to easily copy and share this data, also makes it vulnerable to various exploits, hacks, and falsifications.
-
 The protocol utilizes the blockchain, a distributed ledger technology that was first built to support the Bitcoin cryptocurrency. Blockchain can be best described as a distributed ledger that maintains a list of records called blocks. Each block has a timestamp and is built on top of an already existing block, preventing any data from being altered retroactively.
-
-<img src="images/2.svg" height="200" />
-
-*Figure 2: 0xcert protocol uses blockchain to enable decentralization of unique assets.*
 
 Blockchain offers a unique solution to the problem of secure online transactions. Due to its transparency and distribution of information to many decentralized blockchain nodes, it is nearly impossible to manipulate existing data records, making it potentially suitable for recording events, records, identities, certificates, transactions and other documentation.
 
-We can benefit greatly from this new paradigm. By storing hashed data on the blockchain, individuals, companies, and institutions can keep a decentralized record of their certificate proofs, while maintaining sensitive data completely private. At the same time, all certified records, their issuers, and owners can be easily authenticated and referenced.
+<img src="images/2.svg" height="200" />
+
+*Figure 2: 0xcert protocol uses blockchain to enable decentralization.*
+
+By storing hashed data on the blockchain, individuals, companies, and institutions can keep a decentralized record of their asset proofs, while maintaining sensitive data completely private. At the same time, all certified records, their issuers, and owners can be easily authenticated and referenced.
 
 <div class="pagebreak" />
 
