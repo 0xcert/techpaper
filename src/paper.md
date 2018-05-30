@@ -134,7 +134,7 @@
     <td>20</td>
   </tr>
   <tr class="contents__section">
-    <td>4. Protocol token (XCT)</td>
+    <td>4. Protocol token (ZXC)</td>
     <td>22</td>
   </tr>
   <tr class="contents__section">
@@ -492,17 +492,17 @@ The protocol may include a decentralized governance (DAO) mechanism to allow the
 
 <div class="pagebreak" />
 
-## 4. Protocol token (XCT)
+## 4. Protocol token (ZXC)
 
 According to William Mougayar, author of "The business blockchain", a token is "a unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
 								
-The XCT tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with Ethereum's ERC-20 standard.
+The ZXC tokens are the native utility tokens of the 0xcert protocol. These are fungible tokens and are compliant with Ethereum's ERC-20 standard.
 
 <img src="images/9.svg" height="130" />
 
-*Figure 11: XCT token is a native utility token of the 0xcert protocol.*
+*Figure 11: ZXC token is a native utility token of the 0xcert protocol.*
 
-The XCT token is a protocol token and is introduced to align issuing parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. XCT is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
+The ZXC token is a protocol token and is introduced to align issuing parties with dapps and the community. With the infrastructure built around a system of smart contracts, its primary role is to provide the incentive mechanisms and to support the ecosystem with minimum possible fees. ZXC is the basic liquid asset for dapps that operate on the protocol. Similar to gas on the Ethereum blockchain the protocol token may play a role in all sorts of protocol activities.
 
 Over time a decentralized governance may be introduced to further strengthen the 0xcert community. The protocol token may play a key role when creating a decentralized autonomous organization. The protocol token may not only be used as a rewarding mechanism but also as a distributed voting mechanism.
 
