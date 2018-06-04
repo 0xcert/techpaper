@@ -3,7 +3,7 @@
   Open protocol for certified non-fungible tokens
 </div>
 <div class="info">
-  Version 1.0<br/>
+  Version 1.0 (draft)<br/>
   Authors: Kristijan Sedlak, Jure Zih<br/>
   0xcert.org
 </div>
