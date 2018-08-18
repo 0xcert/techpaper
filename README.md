@@ -6,6 +6,8 @@ This is the official 0xcert protocol technical paper repository, which provides 
 
 ## Development
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/0xcert/techpaper.svg)](https://greenkeeper.io/)
+
 * Run `npm install` to install dependencies.
 
 * Run `npm run generate` to generate the PDF file.
